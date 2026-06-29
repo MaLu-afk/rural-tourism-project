@@ -61,10 +61,10 @@
 
 | Integrante | Rol | GitHub |
 |:----------|:----|:------:|
-| 👨‍💻 Antony Ivan Mendoza Villar | Desarrollador | ![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/) |
-| 👨‍💻 Edithson Ricardo Aybar Escobar | Desarrollador | ![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/Edithson1) |
+| 👨‍💻 Antony Ivan Mendoza Villar | Desarrollador | [![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/) |
+| 👨‍💻 Edithson Ricardo Aybar Escobar | Desarrollador | [![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/Edithson1) |
 | 👩‍💻 Leily Marlith Llanos Angeles | Desarrolladora | [![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/LeilyDev) |
-| 👨‍💻 Magno Ricardo Luque Mamani | Desarrollador | ![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/MaLu-afk) |
+| 👨‍💻 Magno Ricardo Luque Mamani | Desarrollador | [![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/MaLu-afk) |
 
 **Docentes:** Wilder Nina Choquehuayta · Percy Wilianson Lovon Ramos
 
