@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Final_project" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Final_project" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- El fondo de la ventana en frío = fondo del SplashScreen. Así NO hay pantalla de carga
+             blanca inicial de Android: el arranque ya muestra el color del splash y la transición
+             al SplashScreen de Compose es continua. @color/splash_background es day/night, por lo
+             que respeta el modo claro/oscuro del dispositivo. -->
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
 </resources>

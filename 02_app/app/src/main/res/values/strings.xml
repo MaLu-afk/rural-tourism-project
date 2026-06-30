@@ -1,3 +1,436 @@
 <resources>
     <string name="app_name">Yupay Turismo</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_0">Registra visitas sin internet</string>
+    <string name="onboarding_desc_0">Lleva el control de tus visitantes en cualquier lugar, incluso sin conexión a datos o Wi-Fi.</string>
+    <string name="onboarding_btn_0">Comenzar</string>
+    <string name="onboarding_title_1">Mira tus resultados</string>
+    <string name="onboarding_desc_1">Entiende cómo le va a tu emprendimiento con gráficos sencillos y fáciles de leer.</string>
+    <string name="onboarding_btn_1">Siguiente</string>
+    <string name="onboarding_title_2">Recibe consejos</string>
+    <string name="onboarding_desc_2">Escucha recomendaciones personalizadas en voz alta en quechua o español para mejorar tus servicios.</string>
+    <string name="onboarding_btn_2">Crear mi perfil</string>
+    <string name="onboarding_link_device">vincular como dispositivo adicional</string>
+    <string name="onboarding_perm_title">Permisos de Red</string>
+    <string name="onboarding_perm_desc">Para vincular este dispositivo, necesitamos permisos para gestionar la conexión WiFi.</string>
+
+    <!-- Home -->
+    <string name="home_greeting">¡Hola, %s!</string>
+    <string name="home_category">Rubro: %s</string>
+    <string name="home_tip_title">Tip de Emprendedor</string>
+    <string name="home_recent_visits">Registros Recientes</string>
+    <string name="home_tourist_country">Turista / País</string>
+    <string name="home_est_expense">Gasto Est.</string>
+    <string name="home_no_records">No hay registros disponibles</string>
+    <string name="time_day">Día</string>
+    <string name="time_week">Sem</string>
+    <string name="time_month">Mes</string>
+    <string name="time_year">Año</string>
+    <string name="chart_today">Visitas de hoy</string>
+    <string name="chart_week">Visitas de la semana</string>
+    <string name="chart_month">Visitas por semana (Mes)</string>
+    <string name="chart_year">Visitas por mes (Año)</string>
+    <string name="day_mon">Lun</string>
+    <string name="day_tue">Mar</string>
+    <string name="day_wed">Mie</string>
+    <string name="day_thu">Jue</string>
+    <string name="day_fri">Vie</string>
+    <string name="day_sat">Sab</string>
+    <string name="day_sun">Dom</string>
+    <string name="month_jan">Ene</string>
+    <string name="month_feb">Feb</string>
+    <string name="month_mar">Mar</string>
+    <string name="month_apr">Abr</string>
+    <string name="month_may">May</string>
+    <string name="month_jun">Jun</string>
+    <string name="month_jul">Jul</string>
+    <string name="month_aug">Ago</string>
+    <string name="month_sep">Sep</string>
+    <string name="month_oct">Oct</string>
+    <string name="month_nov">Nov</string>
+    <string name="month_dec">Dic</string>
+    <string name="chart_week_label">Sem %d</string>
+
+    <!-- Profile Setup -->
+    <string name="setup_title">Configura tu perfil</string>
+    <string name="setup_business_name_label">Nombre de la tienda o emprendimiento</string>
+    <string name="setup_business_name_hint">Ej. Artesanías del Valle</string>
+    <string name="setup_service_question">¿Qué servicio ofreces principalmente?</string>
+    <string name="setup_save_btn">GUARDAR Y ENTRAR</string>
+
+    <!-- Map -->
+    <string name="map_title">Mapa de Visitas</string>
+    <string name="map_legend">Leyenda de Servicios</string>
+    <string name="map_summary_title">Resumen de Mapa</string>
+    <string name="map_listen_summary">Escuchar Resumen</string>
+    <string name="map_expand">Expandir</string>
+
+    <!-- Tip Detail -->
+    <string name="tip_detail_title">Tip de Emprendedor</string>
+    <string name="tip_detail_subtitle">Tu consejo del día</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Mi Perfil</string>
+    <string name="profile_edit">Editar</string>
+    <string name="profile_settings_title">Configuración de la App</string>
+    <string name="profile_language">Idioma</string>
+    <string name="profile_voice_speed">Velocidad de la voz</string>
+    <string name="profile_notifications">Notificaciones</string>
+    <string name="profile_link_device">Vincular nuevo dispositivo</string>
+    <string name="profile_linked_devices">Dispositivos vinculados</string>
+    <string name="profile_logout">Cerrar sesión</string>
+    <string name="profile_info_title">Información</string>
+    <string name="profile_help">Ayuda y Soporte</string>
+    <string name="profile_privacy">Política de Privacidad</string>
+    <string name="profile_edit_title">Editar Perfil</string>
+    <string name="profile_photo_change">Cambiar foto de perfil</string>
+    <string name="profile_business_name">Nombre del emprendimiento</string>
+    <string name="profile_sector">Sector o Rubro</string>
+    <string name="profile_save_changes">GUARDAR CAMBIOS</string>
+    <string name="profile_logout_confirm_title">¿Cerrar sesión?</string>
+    <string name="profile_logout_confirm_desc">Se cerrará la sesión actual y el dispositivo volverá a la pantalla inicial. Deberás volver a vincularte para sincronizar datos.</string>
+    <string name="profile_online">En línea</string>
+    <string name="profile_offline">Desconectado</string>
+
+    <!-- Services -->
+    <string name="service_lodging">Hospedaje</string>
+    <string name="service_food">Alimentación</string>
+    <string name="service_handicraft">Artesanía</string>
+    <string name="service_others">Varios</string>
+
+    <!-- Visits -->
+    <string name="visits_title">Registros de Visitas</string>
+    <string name="visits_add">Añadir Visita</string>
+    <string name="visits_search_hint">Buscar por país...</string>
+    <string name="visits_detail_title">Detalle de la Visita</string>
+    <string name="visits_date">Fecha</string>
+    <string name="visits_country">País</string>
+    <string name="visits_price">Gasto Estimado</string>
+    <string name="visits_services">Servicios Prestados</string>
+    <string name="add_visit_title">Registrar Nueva Visita</string>
+    <string name="add_visit_country_label">País de origen</string>
+    <string name="add_visit_price_label">Gasto estimado</string>
+    <string name="add_visit_services_label">Servicios prestados</string>
+    <string name="add_visit_save">GUARDAR REGISTRO</string>
+    <string name="select_option">Seleccionar opción</string>
+    <string name="select_range">Seleccionar rango</string>
+    <string name="price_type_range">Rango</string>
+    <string name="price_type_fixed">Fijo</string>
+    <string name="price_type_custom">Personalizado</string>
+    <string name="record_label">Registro</string>
+    <string name="sent_record">Registro Enviado</string>
+    <string name="pending_record">Pendiente de Envío</string>
+    <string name="sent_on">Enviado el</string>
+
+    <!-- Time Ago & Categories -->
+    <string name="time_now">Ahora mismo</string>
+    <string name="time_min_ago">Hace %d min</string>
+    <string name="time_hours_ago">Hace %d horas</string>
+    <string name="time_hour_ago">Hace 1 hora</string>
+    <string name="time_yesterday">Ayer</string>
+    <string name="time_days_ago">Hace %d días</string>
+    <string name="cat_today">Hoy</string>
+    <string name="cat_yesterday">Ayer</string>
+    <string name="cat_this_week">Esta semana</string>
+    <string name="cat_this_month">Este mes</string>
+    <string name="cat_this_year">Este año</string>
+    <string name="cat_older">Más de un año</string>
+    <string name="total_records">%d total</string>
+    <string name="no_records_yet">No hay registros aún</string>
+    <string name="tourist_label">Turista</string>
+
+    <!-- Info Screens -->
+    <string name="help_content">Aquí puedes encontrar información detallada sobre cómo usar la aplicación Yupay Turismo para potenciar tu negocio rural.\n\n1. Registro de visitas: Ve a la pestaña de Visitas o Home y presiona el botón +. Podrás registrar el país de origen, el gasto estimado (como rango, valor fijo o monto exacto) y los servicios que brindaste.\n\n2. Gráficos de Gestión: En el Home, usa los selectores de Día, Semana, Mes y Año para ver la evolución de tus visitas y entender qué épocas son mejores para tu negocio.\n\n3. Mapa Interactivo: Visualiza de qué países vienen tus turistas. Esto te ayuda a saber a qué público dirigirte o en qué idiomas prepararte mejor.\n\n4. Sincronización: Puedes vincular varios dispositivos (celular y tablet) usando el código QR en tu perfil para que todos los registros se mantengan actualizados sin necesidad de internet en el momento.\n\n5. Tips de Emprendedor: Escucha cada día una recomendación personalizada en tu idioma para mejorar la hospitalidad y calidad de tus servicios.</string>
+    <string name="privacy_content">En Yupay Turismo, tu privacidad y la de tus datos comerciales son nuestra máxima prioridad.\n\n1. Almacenamiento Local: Toda la información que registras (visitas, nombres, perfiles) se guarda de forma segura y privada directamente en la memoria de tu dispositivo. No se sube a ninguna "nube" pública sin tu control.\n\n2. Sincronización Directa: Cuando vinculas dos dispositivos, la transferencia de datos ocurre directamente entre ellos a través de tu red local (WiFi o Punto de Acceso), asegurando que tus registros no salgan de tu entorno de trabajo.\n\n3. Uso de Datos: Los datos de visitas son utilizados exclusivamente para generar tus reportes estadísticos y gráficos de gestión personal. Yupay Turismo no comparte, vende ni utiliza tu información para fines publicitarios o comerciales de terceros.\n\n4. Permisos: Solicitamos acceso a la cámara únicamente para escanear códigos QR de vinculación, y permisos de red para la sincronización entre tus propios dispositivos.</string>
+
+    <!-- Scanner -->
+    <string name="scanner_opening">Abriendo escáner de Google...</string>
+    <string name="scanner_error">Error al abrir el escáner</string>
+    <string name="scanner_timeout_title">Tiempo de escáner terminado</string>
+    <string name="scanner_timeout_desc">No se detectó ningún código en el tiempo límite (45s).</string>
+
+    <!-- General -->
+    <string name="btn_cancel">CANCELAR</string>
+    <string name="btn_confirm">CONFIRMAR</string>
+    <string name="btn_close">CERRAR</string>
+    <string name="btn_back">Atrás</string>
+    <string name="btn_retry">REINTENTAR</string>
+    <string name="btn_save">GUARDAR</string>
+    <string name="btn_continue">CONTINUAR</string>
+    <string name="btn_exit_without_save">SALIR SIN GUARDAR</string>
+
+    <!-- Permissions -->
+    <string name="perm_required_title">Permisos necesarios</string>
+    <string name="perm_required_desc">Para vincular un dispositivo necesitamos acceso a la cámara y a las funciones de red.</string>
+    <string name="perm_grant">Conceder</string>
+    <string name="perm_settings_title">Permisos necesarios</string>
+    <string name="perm_settings_desc">Algunos permisos son necesarios para la sincronización. Por favor, actívalos en los ajustes.</string>
+    <string name="perm_open_settings">Abrir Ajustes</string>
+
+    <!-- Linked Devices -->
+    <string name="linked_devices_title">Dispositivos vinculados</string>
+    <string name="linked_devices_empty">No hay dispositivos vinculados</string>
+    <string name="linked_devices_empty_hint">Usa \'Vincular nuevo dispositivo\' en el perfil</string>
+    <string name="linked_devices_disconnect_all">Cerrar todas las sesiones vinculadas</string>
+    <string name="linked_devices_disconnect_confirm_title">¿Resetear servidor vinculado?</string>
+    <string name="linked_devices_disconnect_confirm_desc">Se borrarán todos los datos en el servidor \'%s\' y este volverá a su estado inicial. ¿Estás seguro?</string>
+    <string name="linked_devices_disconnect_btn">RESET REMOTO</string>
+    <string name="linked_devices_mass_disconnect_title">¿Cerrar todas las sesiones?</string>
+    <string name="linked_devices_mass_disconnect_desc">Esta acción enviará una orden de reset a todos los dispositivos conectados actualmente. No podrás deshacer esta acción.</string>
+    <string name="linked_devices_mass_disconnect_btn">CERRAR TODO</string>
+    <string name="linked_devices_connected_now">Conectado ahora</string>
+    <string name="linked_devices_disconnected">Desconectado</string>
+    <string name="linked_devices_disconnect_action">Desconectar</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_unsaved_title">Cambios sin guardar</string>
+    <string name="exit_unsaved_desc">Tienes cambios sin guardar. ¿Deseas salir de todas formas o guardar primero?</string>
+
+    <!-- Dashboard/Insights -->
+    <string name="dashboard_title">Dashboard de Analytics</string>
+    <string name="insights_total_visitors">Total Turistas</string>
+    <string name="insights_top_countries">Ranking Nacionalidades</string>
+    <string name="insights_services">Distribución de Servicios</string>
+    <string name="insights_leader_country">País Líder</string>
+    <string name="insights_star_service">Servicio Estrella</string>
+    <string name="insights_tts_description">Escuchar resumen de insights</string>
+    <string name="insights_filter_all">Todos</string>
+    <string name="insights_filter_month">Este mes</string>
+    <string name="insights_filter_year">Este año</string>
+    <string name="insights_filter_week">Últimos 7 días</string>
+    <string name="insights_revenue_est">Ingresos Estimados</string>
+    <string name="insights_peak_hours">Horas de Mayor Afluencia</string>
+    <string name="insights_visits_density">Densidad de Visitas</string>
+    <string name="insights_tab_summary">Resumen</string>
+    <string name="insights_tab_visitors">Visitantes</string>
+    <string name="insights_tab_sales">Ventas</string>
+    <string name="insights_tab_times">Tiempos</string>
+    <string name="insights_avg_ticket">Ticket Promedio</string>
+    <string name="insights_revenue_over_time">Ingresos en el Tiempo</string>
+    <string name="insights_visits_weekday">Visitas por Día de Semana</string>
+    <string name="insights_visitors_over_time">Visitantes en el Tiempo</string>
+    <string name="insights_revenue_by_service">Ingresos por Servicio</string>
+    <string name="insights_total_items">Productos Vendidos</string>
+    <string name="insights_total_revenue">Ingresos Totales</string>
+    <string name="insights_busiest_hour">Hora Pico</string>
+    <string name="insights_busiest_day">Día Más Activo</string>
+    <string name="insights_part_of_day">Visitas por Franja Horaria</string>
+    <string name="insights_morning">Mañana</string>
+    <string name="insights_afternoon">Tarde</string>
+    <string name="insights_evening">Noche</string>
+    <string name="insights_no_data">Sin datos para este periodo</string>
+    <!-- Catalog -->
+    <string name="catalog_title">Mi Catálogo de Productos</string>
+    <string name="catalog_add_product">Añadir Producto</string>
+    <string name="catalog_edit_product">Editar Producto</string>
+    <string name="catalog_empty">No tienes productos en tu catálogo.</string>
+    <string name="catalog_product_name">Nombre del producto</string>
+    <string name="catalog_product_price">Precio base</string>
+    <string name="catalog_finish_setup">FINALIZAR Y ENTRAR</string>
+    <string name="catalog_setup_desc">Configura los productos que ofreces para empezar a registrar ventas.</string>
+    <string name="product_label">Producto</string>
+    <string name="quantity_label">Cantidad</string>
+    <string name="discount_label">Descuento</string>
+    <string name="subtotal_label">Subtotal</string>
+    <string name="total_label">Total</string>
+    <string name="discount_type_fixed">Monto Fijo (S/)</string>
+    <string name="discount_type_percent">Porcentaje (%)</string>
+    <string name="catalog_delete_confirm_title">¿Eliminar producto?</string>
+    <string name="catalog_delete_confirm_desc">¿Estás seguro de que deseas eliminar \'%s\'? Esta acción no se puede deshacer.</string>
+    <string name="catalog_product_currency">Moneda</string>
+    <string name="catalog_product_category">Categoría / Sector</string>
+    <string name="catalog_discount_active">Descuento activo</string>
+    <string name="catalog_discount_start">Fecha inicio</string>
+    <string name="catalog_discount_end">Fecha fin</string>
+    <string name="profile_currency">Moneda preferida</string>
+    <string name="currency_selection_desc">Selecciona tu moneda preferida para las transacciones. Los precios del catálogo se convertirán automáticamente usando el tipo de cambio.</string>
+    <string name="currency_soles">Soles</string>
+    <string name="currency_dollars">Dólares</string>
+    <string name="currency_euros">Euros</string>
+    <string name="currency_exchange_rate">Cambio: 1 %1$s = S/ %2$s</string>
+    <string name="currency_local">Moneda local</string>
+    <string name="sort_by_label">Ordenar por:</string>
+    <string name="sort_option_name">Nombre</string>
+    <string name="sort_option_price">Precio</string>
+    <string name="sort_option_date">Fecha</string>
+    <string name="content_desc_switch_discount">Cambiar tipo de descuento</string>
+    <string name="profile_sector_change_title">¿Cambiar de sector?</string>
+    <string name="profile_sector_change_desc">Si cambias de rubro, se eliminarán los productos que no pertenezcan a la nueva categoría. ¿Deseas continuar?</string>
+    <string name="search_product_hint">Buscar producto...</string>
+    <string name="search_country_hint">Buscar país...</string>
+
+    <!-- ===== Externalización de texto fijo de la UI (i18n) ===== -->
+    <!-- Navegación inferior / componentes -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_visits">Visitas</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="audio_cd_rewind">Retroceder 10s</string>
+    <string name="audio_cd_pause">Pausar</string>
+    <string name="audio_cd_play">Reproducir</string>
+    <string name="audio_cd_forward">Adelantar 10s</string>
+    <string name="loading_settings">Cargando ajustes...</string>
+    <string name="loading_resources">Preparando recursos...</string>
+    <!-- Auth -->
+    <string name="auth_email_label">Correo electrónico</string>
+    <string name="auth_password_label">Contraseña</string>
+    <string name="auth_cd_show_password">Mostrar contraseña</string>
+    <string name="auth_cd_hide_password">Ocultar contraseña</string>
+    <string name="auth_continue_google">Continuar con Google</string>
+    <string name="auth_divider_or">O</string>
+    <string name="auth_google_signing_in">Iniciando sesión con Google…</string>
+    <string name="auth_google_connecting">Conectando con Google…</string>
+    <string name="auth_btn_close">Cerrar</string>
+    <string name="pwd_rule_min_length">Mínimo 8 caracteres</string>
+    <string name="pwd_rule_upper">Al menos una mayúscula</string>
+    <string name="pwd_rule_lower">Al menos una minúscula</string>
+    <string name="pwd_rule_digit">Al menos un número</string>
+    <string name="pwd_rule_special">Al menos un carácter especial</string>
+    <string name="pwd_rule_match">Las contraseñas coinciden</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="login_subtitle">Ingresa tus credenciales para acceder a tu cuenta sincronizada</string>
+    <string name="login_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_btn_enter">Entrar</string>
+    <string name="login_link_offline">Vincular sin cuenta (Offline)</string>
+    <string name="register_title">Registro</string>
+    <string name="register_subtitle">Crea tu cuenta para sincronizar tus datos en la nube</string>
+    <string name="register_btn_register">Registrarse</string>
+    <string name="register_divider_or">O regístrate con</string>
+    <string name="register_exists_title">Cuenta ya registrada</string>
+    <string name="register_exists_desc">Esta cuenta de Google ya está registrada. Inicia sesión en su lugar.</string>
+    <string name="register_exists_signin">Iniciar sesión</string>
+    <string name="forgot_title">Recuperar Cuenta</string>
+    <string name="forgot_subtitle">Ingresa tu correo electrónico para recibir un código de recuperación</string>
+    <string name="forgot_btn_send_code">Enviar Código</string>
+    <string name="reset_title">Nueva Contraseña</string>
+    <string name="reset_title_account">Establecer Contraseña</string>
+    <string name="reset_subtitle">Ingresa tu nueva contraseña para acceder a tu cuenta</string>
+    <string name="reset_subtitle_account">Crea una contraseña para también poder iniciar sesión con tu correo</string>
+    <string name="reset_new_password_label">Nueva contraseña</string>
+    <string name="reset_confirm_password_label">Confirmar contraseña</string>
+    <string name="reset_btn_update">Actualizar Contraseña</string>
+    <string name="otp_title">Verificación</string>
+    <string name="otp_subtitle">Ingresa el código de %1$d dígitos enviado a</string>
+    <string name="otp_paste_clipboard">Pegar código del portapapeles</string>
+    <string name="otp_btn_verify">Verificar Código</string>
+    <string name="otp_resend">¿No recibiste el código? Reenviar</string>
+    <string name="account_title">Información de Cuenta</string>
+    <string name="account_email_unavailable">No disponible</string>
+    <string name="account_linked_synced">Tu cuenta está vinculada y sincronizada</string>
+    <string name="account_set_change_password">Establecer / cambiar contraseña</string>
+    <string name="account_set_change_password_desc">Si entraste con Google, crea una contraseña para también usar tu correo</string>
+    <string name="account_data_saved_info">Tus datos se guardan automáticamente en nuestros servidores para que puedas acceder desde cualquier dispositivo.</string>
+    <!-- Profile / Product -->
+    <string name="profile_full_reset_title">¿Cerrar sesión y borrar todo?</string>
+    <string name="profile_full_reset_desc">Esta acción eliminará todos los datos de la aplicación (ajustes, visitas y productos) y volverá al inicio. Esta acción no se puede deshacer.</string>
+    <string name="profile_full_reset_btn">Cerrar Sesión (Borrar todo)</string>
+    <string name="profile_cd_photo">Foto de perfil</string>
+    <string name="profile_loading">Cargando...</string>
+    <string name="profile_account_linked">Cuenta vinculada</string>
+    <string name="profile_account_link_api">Vincular cuenta con la API</string>
+    <string name="profile_account_locked">Bloqueado (%1$d/5 visitas)</string>
+    <string name="profile_account_available">Disponible</string>
+    <string name="product_invalid_dates_title">Fechas inválidas</string>
+    <string name="product_invalid_dates_desc">Las fechas de descuento son inválidas o incompletas. Se guardará el producto sin ninguna de las fechas de oferta.</string>
+    <string name="product_date_invalid_past">Fecha inválida o pasada</string>
+    <string name="product_date_not_before_today">La fecha no puede ser anterior a hoy</string>
+    <string name="edit_profile_gallery">Galería</string>
+    <string name="edit_profile_crop_hint">Usa dos dedos para mover y ampliar la foto</string>
+    <string name="catalog_cd_delete">Eliminar</string>
+    <!-- Visits -->
+    <string name="visits_cd_sent">Enviado</string>
+    <string name="visits_cd_pending">Pendiente</string>
+    <!-- Sync / QR -->
+    <string name="sync_server_mode">Modo Servidor</string>
+    <string name="sync_syncing_title">Sincronizando...</string>
+    <string name="sync_badge_connected">● CONECTADO</string>
+    <string name="sync_badge_disconnected">● DESCONECTADO</string>
+    <string name="sync_syncing_data">Sincronizando datos...</string>
+    <string name="sync_waiting">Esperando...</string>
+    <string name="sync_metric_last_event">Último evento</string>
+    <string name="sync_metric_latency">Latencia</string>
+    <string name="sync_metric_acks">ACKs (Éxito/Total)</string>
+    <string name="sync_metric_success_rate">Tasa éxito</string>
+    <string name="sync_send_ping">ENVIAR SEÑAL DE PRUEBA (PING)</string>
+    <string name="sync_event_log">Registro de eventos</string>
+    <string name="sync_disconnect_btn">DESCONECTAR</string>
+    <string name="sync_disconnect_confirm_title">¿Desconectar dispositivo?</string>
+    <string name="sync_disconnect_confirm_btn">Desconectar</string>
+    <string name="sync_connection_required_title">Conexión requerida</string>
+    <string name="sync_connection_required_desc">No puedes realizar esta acción mientras el otro dispositivo esté desconectado. Por favor, asegúrate de que ambos dispositivos tengan la aplicación abierta y estén en la misma red WiFi antes de desvincular.</string>
+    <string name="sync_connection_required_btn">ENTENDIDO</string>
+    <string name="qr_link_device_title">Vincular dispositivo</string>
+    <string name="qr_scan_instruction">Escanea este código desde el otro dispositivo</string>
+    <string name="qr_cd_code">Código QR</string>
+    <string name="qr_waiting_connection">Esperando conexión...</string>
+    <string name="qr_label_ip">IP: %1$s</string>
+    <string name="qr_label_session">Sesión: %1$s</string>
+    <string name="scan_device_found_title">Dispositivo encontrado</string>
+    <string name="scan_label_name">Nombre: %1$s</string>
+    <string name="scan_label_ip">IP: %1$s:%2$d</string>
+    <string name="scan_label_session">Sesión: %1$s...</string>
+    <string name="scan_connect_btn">Conectar</string>
+    <string name="linked_devices_unknown">Desconocido</string>
+    <!-- Dashboard -->
+    <string name="dashboard_cd_back">Volver</string>
+    <string name="insights_top_5">Top 5</string>
+    <string name="insights_top_10">Top 10</string>
+    <!-- Home / Info / Map / Onboarding -->
+    <string name="home_cd_profile_photo">Foto de perfil</string>
+    <string name="home_tip_fallback">Optimiza tus perfiles sociales para atraer más...</string>
+    <string name="home_cd_play">Reproducir</string>
+    <string name="home_see_all">Ver todo</string>
+    <string name="tip_detail_empty">No hay consejos disponibles en este momento.</string>
+    <string name="info_cd_back">Atrás</string>
+    <string name="map_cd_expand">Expandir</string>
+    <string name="map_cd_mode">Modo</string>
+    <string name="map_cd_back">Volver</string>
+    <string name="onboarding_other_languages">Otros idiomas</string>
+    <string name="onboarding_cd_options">Opciones</string>
+    <!-- Dashboard: mensajes de resumen por pestaña (botón de sonido) -->
+    <string name="insights_msg_empty">Aún no hay datos suficientes.\nRegistra visitas para ver tu resumen.</string>
+    <string name="insights_msg_summary">Recibiste %1$d turistas en total.\nTu país líder es %2$s y tu producto estrella es %3$s.\nIngresos totales: %4$s.</string>
+    <string name="insights_msg_visitors">Te visitaron %1$d turistas.\nLa mayoría provienen de %2$s.\nTu día más concurrido es el %3$s.</string>
+    <string name="insights_msg_sales">Vendiste %1$d productos.\nIngresos totales: %2$s, con un ticket promedio de %3$s.\nLo más vendido: %4$s.</string>
+    <string name="insights_msg_times">Tu hora pico es a las %1$s.\nTu día más activo es el %2$s.</string>
+    <!-- Perfil: indicador corto de cuenta vinculada -->
+    <string name="profile_account_connected">Conectado</string>
+
+    <!-- Voz y audio (TTS Sherpa-ONNX) -->
+    <string name="voice_section_title">Voz y audio</string>
+    <string name="profile_voice_models">Modelos de voz</string>
+    <string name="voice_models_subtitle">Descarga y activa la voz de tu idioma. Pulsa ▶ para escuchar cada una.</string>
+    <string name="voice_no_voice_configured">Sin voz configurada. Descarga un modelo para activar el audio.</string>
+    <string name="voice_preview">Probar voz</string>
+    <string name="voice_quality_light">💡 ligero, ahorra datos</string>
+    <string name="voice_quality_high">⭐ alta calidad</string>
+    <string name="voice_btn_download">Descargar</string>
+    <string name="voice_btn_cancel">Cancelar</string>
+    <string name="voice_btn_activate">Activar</string>
+    <string name="voice_btn_delete">Eliminar</string>
+    <string name="voice_btn_retry">Reintentar</string>
+    <string name="voice_in_use">En uso</string>
+    <string name="voice_downloading">Descargando… %1$s</string>
+    <string name="voice_freed_space">Espacio liberado: %1$s</string>
+    <string name="voice_error">Error al descargar</string>
+    <string name="audio_btn_no_voice">Configura una voz en tu perfil</string>
+    <string name="audio_btn_play">Reproducir</string>
+    <string name="audio_btn_stop">Detener</string>
+    <!-- Estado del reproductor de audio TTS -->
+    <string name="audio_status_preparing">Convirtiendo texto a audio…</string>
+    <string name="audio_status_no_audio">No hay audio del texto</string>
+    <string name="audio_status_no_text">No hay texto para convertir</string>
+    <string name="audio_status_loading">Cargando audio…</string>
+    <!-- Borrar cuenta -->
+    <string name="delete_account_button">Borrar cuenta</string>
+    <string name="delete_account_title">¿Borrar tu cuenta?</string>
+    <string name="delete_account_desc">Se eliminarán de forma permanente tu cuenta y todos tus datos de la nube y de este dispositivo. Esta acción no se puede deshacer.</string>
+    <string name="btn_delete_account">Borrar</string>
+    <!-- Descarga de modelos de voz: pausa/reanudar/sin conexión -->
+    <string name="voice_btn_pause">Pausar</string>
+    <string name="voice_btn_resume">Reanudar</string>
+    <string name="voice_paused">Pausada · %1$s</string>
+    <string name="voice_waiting_network">Esperando conexión…</string>
+    <string name="voice_no_internet">Sin conexión a internet</string>
 </resources>

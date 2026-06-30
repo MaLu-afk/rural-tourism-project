@@ -1,0 +1,424 @@
+<resources>
+    <!-- Onboarding -->
+    <string name="onboarding_title_0">Register visits without internet</string>
+    <string name="onboarding_desc_0">Keep track of your visitors anywhere, even without data or Wi-Fi connection.</string>
+    <string name="onboarding_btn_0">Start</string>
+    <string name="onboarding_title_1">See your results</string>
+    <string name="onboarding_desc_1">Understand how your business is doing with simple, easy-to-read charts.</string>
+    <string name="onboarding_btn_1">Next</string>
+    <string name="onboarding_title_2">Get advice</string>
+    <string name="onboarding_desc_2">Listen to personalized recommendations in Quechua or Spanish to improve your services.</string>
+    <string name="onboarding_btn_2">Create my profile</string>
+    <string name="onboarding_link_device">link as an additional device</string>
+    <string name="onboarding_perm_title">Network Permissions</string>
+    <string name="onboarding_perm_desc">To link this device, we need permissions to manage the WiFi connection.</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Hello, %s!</string>
+    <string name="home_category">Category: %s</string>
+    <string name="home_tip_title">Entrepreneur Tip</string>
+    <string name="home_recent_visits">Recent Records</string>
+    <string name="home_tourist_country">Tourist / Country</string>
+    <string name="home_est_expense">Est. Expense</string>
+    <string name="home_no_records">No records available</string>
+    <string name="time_day">Day</string>
+    <string name="time_week">Week</string>
+    <string name="time_month">Month</string>
+    <string name="time_year">Year</string>
+    <string name="chart_today">Today\'s visits</string>
+    <string name="chart_week">Weekly visits</string>
+    <string name="chart_month">Visits per week (Month)</string>
+    <string name="chart_year">Visits per month (Year)</string>
+    <string name="day_mon">Mon</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_sat">Sat</string>
+    <string name="day_sun">Sun</string>
+    <string name="month_jan">Jan</string>
+    <string name="month_feb">Feb</string>
+    <string name="month_mar">Mar</string>
+    <string name="month_apr">Apr</string>
+    <string name="month_may">May</string>
+    <string name="month_jun">Jun</string>
+    <string name="month_jul">Jul</string>
+    <string name="month_aug">Aug</string>
+    <string name="month_sep">Sep</string>
+    <string name="month_oct">Oct</string>
+    <string name="month_nov">Nov</string>
+    <string name="month_dec">Dec</string>
+    <string name="chart_week_label">Week %d</string>
+
+    <!-- Profile Setup -->
+    <string name="setup_title">Set up your profile</string>
+    <string name="setup_business_name_label">Store or business name</string>
+    <string name="setup_business_name_hint">Ex. Valley Handicrafts</string>
+    <string name="setup_service_question">What service do you mainly offer?</string>
+    <string name="setup_save_btn">SAVE AND ENTER</string>
+
+    <!-- Map -->
+    <string name="map_title">Visit Map</string>
+    <string name="map_legend">Service Legend</string>
+    <string name="map_summary_title">Map Summary</string>
+    <string name="map_listen_summary">Listen Summary</string>
+    <string name="map_expand">Expand</string>
+
+    <!-- Tip Detail -->
+    <string name="tip_detail_title">Entrepreneur Tip</string>
+    <string name="tip_detail_subtitle">Your daily tip</string>
+
+    <!-- Profile -->
+    <string name="profile_title">My Profile</string>
+    <string name="profile_edit">Edit</string>
+    <string name="profile_settings_title">App Settings</string>
+    <string name="profile_language">Language</string>
+    <string name="profile_voice_speed">Voice speed</string>
+    <string name="profile_notifications">Notifications</string>
+    <string name="profile_link_device">Link new device</string>
+    <string name="profile_linked_devices">Linked devices</string>
+    <string name="profile_logout">Log out</string>
+    <string name="profile_info_title">Information</string>
+    <string name="profile_help">Help &amp; Support</string>
+    <string name="profile_privacy">Privacy Policy</string>
+    <string name="profile_edit_title">Edit Profile</string>
+    <string name="profile_photo_change">Change profile picture</string>
+    <string name="profile_business_name">Business name</string>
+    <string name="profile_sector">Sector or Category</string>
+    <string name="profile_save_changes">SAVE CHANGES</string>
+    <string name="profile_logout_confirm_title">Log out?</string>
+    <string name="profile_logout_confirm_desc">The current session will be closed and the device will return to the initial screen. You will need to relink to synchronize data.</string>
+    <string name="profile_online">Online</string>
+    <string name="profile_offline">Offline</string>
+
+    <!-- Services -->
+    <string name="service_lodging">Lodging</string>
+    <string name="service_food">Food</string>
+    <string name="service_handicraft">Handicraft</string>
+    <string name="service_others">Various</string>
+
+    <!-- Visits -->
+    <string name="visits_title">Visit Records</string>
+    <string name="visits_add">Add Visit</string>
+    <string name="visits_search_hint">Search by country…</string>
+    <string name="visits_detail_title">Visit Detail</string>
+    <string name="visits_date">Date</string>
+    <string name="visits_country">Country</string>
+    <string name="visits_price">Estimated Expense</string>
+    <string name="visits_services">Services Provided</string>
+    <string name="add_visit_title">Register New Visit</string>
+    <string name="add_visit_country_label">Country of origin</string>
+    <string name="add_visit_price_label">Estimated expense</string>
+    <string name="add_visit_services_label">Services provided</string>
+    <string name="add_visit_save">SAVE RECORD</string>
+    <string name="select_option">Select option</string>
+    <string name="select_range">Select range</string>
+    <string name="price_type_range">Range</string>
+    <string name="price_type_fixed">Fixed</string>
+    <string name="price_type_custom">Custom</string>
+    <string name="record_label">Record</string>
+    <string name="sent_record">Record Sent</string>
+    <string name="pending_record">Pending Shipment</string>
+    <string name="sent_on">Sent on</string>
+
+    <!-- Time Ago & Categories -->
+    <string name="time_now">Right now</string>
+    <string name="time_min_ago">%d min ago</string>
+    <string name="time_hours_ago">%d hours ago</string>
+    <string name="time_hour_ago">1 hour ago</string>
+    <string name="time_yesterday">Yesterday</string>
+    <string name="time_days_ago">%d days ago</string>
+    <string name="cat_today">Today</string>
+    <string name="cat_yesterday">Yesterday</string>
+    <string name="cat_this_week">This week</string>
+    <string name="cat_this_month">This month</string>
+    <string name="cat_this_year">This year</string>
+    <string name="cat_older">Over a year ago</string>
+    <string name="total_records">%d total</string>
+    <string name="no_records_yet">No records yet</string>
+    <string name="tourist_label">Tourist</string>
+
+    <!-- Info Screens -->
+    <string name="help_content">Here you can find detailed information on how to use the Yupay Turismo application to boost your rural business.\n\n1. Visit registration: Go to the Visits or Home tab and press the + button. You can register the country of origin, the estimated expense (as a range, fixed value, or exact amount), and the services you provided.\n\n2. Management Charts: On the Home screen, use the Day, Week, Month, and Year selectors to see the evolution of your visits and understand which times are best for your business.\n\n3. Interactive Map: Visualize which countries your tourists come from. This helps you know which audience to target or which languages to prepare for better.\n\n4. Synchronization: You can link multiple devices (phone and tablet) using the QR code in your profile so that all records stay updated without the need for internet at the time.\n\n5. Entrepreneur Tips: Listen every day to a personalized recommendation in your language to improve the hospitality and quality of your services.</string>
+    <string name="privacy_content">At Yupay Turismo, your privacy and that of your business data are our top priority.\n\n1. Local Storage: All the information you register (visits, names, profiles) is stored securely and privately directly in your device\'s memory. It is not uploaded to any public "cloud" without your control.\n\n2. Direct Synchronization: When you link two devices, the data transfer occurs directly between them through your local network (WiFi or Hotspot), ensuring that your records do not leave your work environment.\n\n3. Data Use: Visit data is used exclusively to generate your statistical reports and personal management charts. Yupay Turismo does not share, sell, or use your information for advertising or third-party commercial purposes.\n\n4. Permissions: We request access to the camera solely to scan linking QR codes, and network permissions for synchronization between your own devices.</string>
+
+    <!-- Scanner -->
+    <string name="scanner_opening">Opening Google scanner...</string>
+    <string name="scanner_error">Error opening scanner</string>
+    <string name="scanner_timeout_title">Scanner time finished</string>
+    <string name="scanner_timeout_desc">No code detected within the time limit (45s).</string>
+
+    <!-- General -->
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_confirm">CONFIRM</string>
+    <string name="btn_close">CLOSE</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_retry">RETRY</string>
+    <string name="btn_save">SAVE</string>
+    <string name="btn_continue">CONTINUE</string>
+    <string name="btn_exit_without_save">EXIT WITHOUT SAVING</string>
+
+    <!-- Permissions -->
+    <string name="perm_required_title">Permissions required</string>
+    <string name="perm_required_desc">To link a device we need access to the camera and network functions.</string>
+    <string name="perm_grant">Grant</string>
+    <string name="perm_settings_title">Permissions required</string>
+    <string name="perm_settings_desc">Some permissions are necessary for synchronization. Please activate them in settings.</string>
+    <string name="perm_open_settings">Open Settings</string>
+
+    <!-- Linked Devices -->
+    <string name="linked_devices_title">Linked devices</string>
+    <string name="linked_devices_empty">No linked devices</string>
+    <string name="linked_devices_empty_hint">Use \'Link new device\' in the profile</string>
+    <string name="linked_devices_disconnect_all">Close all linked sessions</string>
+    <string name="linked_devices_disconnect_confirm_title">Reset linked server?</string>
+    <string name="linked_devices_disconnect_confirm_desc">All data on the server \'%s\' will be deleted and it will return to its initial state. Are you sure?</string>
+    <string name="linked_devices_disconnect_btn">REMOTE RESET</string>
+    <string name="linked_devices_mass_disconnect_title">Close all sessions?</string>
+    <string name="linked_devices_mass_disconnect_desc">This action will send a reset order to all currently connected devices. You cannot undo this action.</string>
+    <string name="linked_devices_mass_disconnect_btn">CLOSE ALL</string>
+    <string name="linked_devices_connected_now">Connected now</string>
+    <string name="linked_devices_disconnected">Disconnected</string>
+    <string name="linked_devices_disconnect_action">Disconnect</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_unsaved_title">Unsaved changes</string>
+    <string name="exit_unsaved_desc">You have unsaved changes. Do you want to exit anyway or save first?</string>
+
+    <!-- Dashboard/Insights -->
+    <string name="dashboard_title">Analytics Dashboard</string>
+    <string name="insights_total_visitors">Total Tourists</string>
+    <string name="insights_top_countries">Nationality Ranking</string>
+    <string name="insights_services">Service Distribution</string>
+    <string name="insights_leader_country">Leading Country</string>
+    <string name="insights_star_service">Star Service</string>
+    <string name="insights_tts_description">Listen to insights summary</string>
+    <string name="insights_filter_all">All</string>
+    <string name="insights_filter_month">This month</string>
+    <string name="insights_filter_year">This year</string>
+    <string name="insights_filter_week">Last 7 days</string>
+    <string name="insights_revenue_est">Estimated Revenue</string>
+    <string name="insights_peak_hours">Peak Visiting Hours</string>
+    <string name="insights_visits_density">Visit Density</string>
+    <string name="insights_tab_summary">Summary</string>
+    <string name="insights_tab_visitors">Visitors</string>
+    <string name="insights_tab_sales">Sales</string>
+    <string name="insights_tab_times">Times</string>
+    <string name="insights_avg_ticket">Average Ticket</string>
+    <string name="insights_revenue_over_time">Revenue Over Time</string>
+    <string name="insights_visits_weekday">Visits by Weekday</string>
+    <string name="insights_visitors_over_time">Visitors Over Time</string>
+    <string name="insights_revenue_by_service">Revenue by Service</string>
+    <string name="insights_total_items">Products Sold</string>
+    <string name="insights_total_revenue">Total Revenue</string>
+    <string name="insights_busiest_hour">Busiest Hour</string>
+    <string name="insights_busiest_day">Busiest Day</string>
+    <string name="insights_part_of_day">Visits by Time of Day</string>
+    <string name="insights_morning">Morning</string>
+    <string name="insights_afternoon">Afternoon</string>
+    <string name="insights_evening">Evening</string>
+    <string name="insights_no_data">No data for this period</string>
+    <!-- Catalog -->
+    <string name="catalog_title">My Product Catalog</string>
+    <string name="catalog_add_product">Add Product</string>
+    <string name="catalog_edit_product">Edit Product</string>
+    <string name="catalog_empty">You have no products in your catalog.</string>
+    <string name="catalog_product_name">Product name</string>
+    <string name="catalog_product_price">Base price</string>
+    <string name="catalog_finish_setup">FINISH AND ENTER</string>
+    <string name="catalog_setup_desc">Set up the products you offer to start recording sales.</string>
+    <string name="product_label">Product</string>
+    <string name="quantity_label">Quantity</string>
+    <string name="discount_label">Discount</string>
+    <string name="subtotal_label">Subtotal</string>
+    <string name="total_label">Total</string>
+    <string name="discount_type_fixed">Fixed Amount (S/)</string>
+    <string name="discount_type_percent">Percentage (%)</string>
+    <string name="catalog_delete_confirm_title">Delete product?</string>
+    <string name="catalog_delete_confirm_desc">Are you sure you want to delete \'%s\'? This action cannot be undone.</string>
+    <string name="catalog_product_currency">Currency</string>
+    <string name="catalog_product_category">Category / Sector</string>
+    <string name="catalog_discount_active">Active discount</string>
+    <string name="catalog_discount_start">Start date</string>
+    <string name="catalog_discount_end">End date</string>
+    <string name="profile_currency">Preferred currency</string>
+    <string name="currency_selection_desc">Select your preferred currency for transactions. Catalog prices will be automatically converted using the exchange rate.</string>
+    <string name="currency_soles">Soles</string>
+    <string name="currency_dollars">Dollars</string>
+    <string name="currency_euros">Euros</string>
+    <string name="currency_exchange_rate">Exchange: 1 %1$s = S/ %2$s</string>
+    <string name="currency_local">Local currency</string>
+    <string name="sort_by_label">Sort by:</string>
+    <string name="sort_option_name">Name</string>
+    <string name="sort_option_price">Price</string>
+    <string name="sort_option_date">Date</string>
+    <string name="content_desc_switch_discount">Switch discount type</string>
+    <string name="profile_sector_change_title">Change sector?</string>
+    <string name="profile_sector_change_desc">If you change your business category, products not belonging to the new category will be deleted. Do you want to continue?</string>
+    <string name="search_product_hint">Search product...</string>
+    <string name="search_country_hint">Search country...</string>
+
+    <!-- ===== UI fixed-text externalization (i18n) ===== -->
+    <string name="nav_home">Home</string>
+    <string name="nav_visits">Visits</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_profile">Profile</string>
+    <string name="audio_cd_rewind">Rewind 10s</string>
+    <string name="audio_cd_pause">Pause</string>
+    <string name="audio_cd_play">Play</string>
+    <string name="audio_cd_forward">Forward 10s</string>
+    <string name="loading_settings">Loading settings...</string>
+    <string name="loading_resources">Preparing resources...</string>
+    <string name="auth_email_label">Email address</string>
+    <string name="auth_password_label">Password</string>
+    <string name="auth_cd_show_password">Show password</string>
+    <string name="auth_cd_hide_password">Hide password</string>
+    <string name="auth_continue_google">Continue with Google</string>
+    <string name="auth_divider_or">OR</string>
+    <string name="auth_google_signing_in">Signing in with Google…</string>
+    <string name="auth_google_connecting">Connecting with Google…</string>
+    <string name="auth_btn_close">Close</string>
+    <string name="pwd_rule_min_length">At least 8 characters</string>
+    <string name="pwd_rule_upper">At least one uppercase letter</string>
+    <string name="pwd_rule_lower">At least one lowercase letter</string>
+    <string name="pwd_rule_digit">At least one number</string>
+    <string name="pwd_rule_special">At least one special character</string>
+    <string name="pwd_rule_match">Passwords match</string>
+    <string name="login_title">Sign In</string>
+    <string name="login_subtitle">Enter your credentials to access your synced account</string>
+    <string name="login_forgot_password">Forgot your password?</string>
+    <string name="login_btn_enter">Sign in</string>
+    <string name="login_link_offline">Link without account (Offline)</string>
+    <string name="register_title">Sign Up</string>
+    <string name="register_subtitle">Create your account to sync your data to the cloud</string>
+    <string name="register_btn_register">Sign up</string>
+    <string name="register_divider_or">Or sign up with</string>
+    <string name="register_exists_title">Account already registered</string>
+    <string name="register_exists_desc">This Google account is already registered. Sign in instead.</string>
+    <string name="register_exists_signin">Sign in</string>
+    <string name="forgot_title">Recover Account</string>
+    <string name="forgot_subtitle">Enter your email address to receive a recovery code</string>
+    <string name="forgot_btn_send_code">Send Code</string>
+    <string name="reset_title">New Password</string>
+    <string name="reset_title_account">Set Password</string>
+    <string name="reset_subtitle">Enter your new password to access your account</string>
+    <string name="reset_subtitle_account">Create a password so you can also sign in with your email</string>
+    <string name="reset_new_password_label">New password</string>
+    <string name="reset_confirm_password_label">Confirm password</string>
+    <string name="reset_btn_update">Update Password</string>
+    <string name="otp_title">Verification</string>
+    <string name="otp_subtitle">Enter the %1$d-digit code sent to</string>
+    <string name="otp_paste_clipboard">Paste code from clipboard</string>
+    <string name="otp_btn_verify">Verify Code</string>
+    <string name="otp_resend">Didn\'t receive the code? Resend</string>
+    <string name="account_title">Account Information</string>
+    <string name="account_email_unavailable">Not available</string>
+    <string name="account_linked_synced">Your account is linked and synced</string>
+    <string name="account_set_change_password">Set / change password</string>
+    <string name="account_set_change_password_desc">If you signed in with Google, create a password to also use your email</string>
+    <string name="account_data_saved_info">Your data is saved automatically on our servers so you can access it from any device.</string>
+    <string name="profile_full_reset_title">Log out and erase everything?</string>
+    <string name="profile_full_reset_desc">This action will delete all app data (settings, visits and products) and return to the start. This cannot be undone.</string>
+    <string name="profile_full_reset_btn">Log out (Erase all)</string>
+    <string name="profile_cd_photo">Profile photo</string>
+    <string name="profile_loading">Loading...</string>
+    <string name="profile_account_linked">Linked account</string>
+    <string name="profile_account_link_api">Link account with the API</string>
+    <string name="profile_account_locked">Locked (%1$d/5 visits)</string>
+    <string name="profile_account_available">Available</string>
+    <string name="product_invalid_dates_title">Invalid dates</string>
+    <string name="product_invalid_dates_desc">The discount dates are invalid or incomplete. The product will be saved without any of the offer dates.</string>
+    <string name="product_date_invalid_past">Invalid or past date</string>
+    <string name="product_date_not_before_today">The date cannot be earlier than today</string>
+    <string name="edit_profile_gallery">Gallery</string>
+    <string name="edit_profile_crop_hint">Use two fingers to move and zoom the photo</string>
+    <string name="catalog_cd_delete">Delete</string>
+    <string name="visits_cd_sent">Sent</string>
+    <string name="visits_cd_pending">Pending</string>
+    <string name="sync_server_mode">Server Mode</string>
+    <string name="sync_syncing_title">Syncing...</string>
+    <string name="sync_badge_connected">● CONNECTED</string>
+    <string name="sync_badge_disconnected">● DISCONNECTED</string>
+    <string name="sync_syncing_data">Syncing data...</string>
+    <string name="sync_waiting">Waiting...</string>
+    <string name="sync_metric_last_event">Last event</string>
+    <string name="sync_metric_latency">Latency</string>
+    <string name="sync_metric_acks">ACKs (Success/Total)</string>
+    <string name="sync_metric_success_rate">Success rate</string>
+    <string name="sync_send_ping">SEND TEST SIGNAL (PING)</string>
+    <string name="sync_event_log">Event log</string>
+    <string name="sync_disconnect_btn">DISCONNECT</string>
+    <string name="sync_disconnect_confirm_title">Disconnect device?</string>
+    <string name="sync_disconnect_confirm_btn">Disconnect</string>
+    <string name="sync_connection_required_title">Connection required</string>
+    <string name="sync_connection_required_desc">You can\'t perform this action while the other device is disconnected. Please make sure both devices have the app open and are on the same WiFi network before unlinking.</string>
+    <string name="sync_connection_required_btn">GOT IT</string>
+    <string name="qr_link_device_title">Link device</string>
+    <string name="qr_scan_instruction">Scan this code from the other device</string>
+    <string name="qr_cd_code">QR code</string>
+    <string name="qr_waiting_connection">Waiting for connection...</string>
+    <string name="qr_label_ip">IP: %1$s</string>
+    <string name="qr_label_session">Session: %1$s</string>
+    <string name="scan_device_found_title">Device found</string>
+    <string name="scan_label_name">Name: %1$s</string>
+    <string name="scan_label_ip">IP: %1$s:%2$d</string>
+    <string name="scan_label_session">Session: %1$s...</string>
+    <string name="scan_connect_btn">Connect</string>
+    <string name="linked_devices_unknown">Unknown</string>
+    <string name="dashboard_cd_back">Back</string>
+    <string name="insights_top_5">Top 5</string>
+    <string name="insights_top_10">Top 10</string>
+    <string name="home_cd_profile_photo">Profile photo</string>
+    <string name="home_tip_fallback">Optimize your social profiles to attract more...</string>
+    <string name="home_cd_play">Play</string>
+    <string name="home_see_all">See all</string>
+    <string name="tip_detail_empty">No tips available at the moment.</string>
+    <string name="info_cd_back">Back</string>
+    <string name="map_cd_expand">Expand</string>
+    <string name="map_cd_mode">Mode</string>
+    <string name="map_cd_back">Back</string>
+    <string name="onboarding_other_languages">Other languages</string>
+    <string name="onboarding_cd_options">Options</string>
+    <!-- Dashboard: per-tab summary messages (sound button) -->
+    <string name="insights_msg_empty">Not enough data yet.\nLog visits to see your summary.</string>
+    <string name="insights_msg_summary">You received %1$d tourists in total.\nYour top country is %2$s and your star product is %3$s.\nTotal revenue: %4$s.</string>
+    <string name="insights_msg_visitors">%1$d tourists visited you.\nMost of them come from %2$s.\nYour busiest day is %3$s.</string>
+    <string name="insights_msg_sales">You sold %1$d products.\nTotal revenue: %2$s, with an average ticket of %3$s.\nBest seller: %4$s.</string>
+    <string name="insights_msg_times">Your peak hour is %1$s.\nYour busiest day is %2$s.</string>
+    <!-- Profile: short linked-account indicator -->
+    <string name="profile_account_connected">Connected</string>
+
+    <!-- Voice & audio (Sherpa-ONNX TTS) -->
+    <string name="voice_section_title">Voice &amp; audio</string>
+    <string name="profile_voice_models">Voice models</string>
+    <string name="voice_models_subtitle">Download and activate a voice for your language. Tap ▶ to hear each one.</string>
+    <string name="voice_no_voice_configured">No voice set up. Download a model to enable audio.</string>
+    <string name="voice_preview">Test voice</string>
+    <string name="voice_quality_light">💡 light, saves data</string>
+    <string name="voice_quality_high">⭐ high quality</string>
+    <string name="voice_btn_download">Download</string>
+    <string name="voice_btn_cancel">Cancel</string>
+    <string name="voice_btn_activate">Activate</string>
+    <string name="voice_btn_delete">Delete</string>
+    <string name="voice_btn_retry">Retry</string>
+    <string name="voice_in_use">In use</string>
+    <string name="voice_downloading">Downloading… %1$s</string>
+    <string name="voice_freed_space">Freed space: %1$s</string>
+    <string name="voice_error">Download failed</string>
+    <string name="audio_btn_no_voice">Set up a voice in your profile</string>
+    <string name="audio_btn_play">Play</string>
+    <string name="audio_btn_stop">Stop</string>
+    <string name="audio_status_preparing">Converting text to audio…</string>
+    <string name="audio_status_no_audio">No audio for this text</string>
+    <string name="audio_status_no_text">There\'s no text to convert</string>
+    <string name="audio_status_loading">Loading audio…</string>
+    <string name="delete_account_button">Delete account</string>
+    <string name="delete_account_title">Delete your account?</string>
+    <string name="delete_account_desc">Your account and all your data in the cloud and on this device will be permanently deleted. This action cannot be undone.</string>
+    <string name="btn_delete_account">Delete</string>
+    <string name="voice_btn_pause">Pause</string>
+    <string name="voice_btn_resume">Resume</string>
+    <string name="voice_paused">Paused · %1$s</string>
+    <string name="voice_waiting_network">Waiting for connection…</string>
+    <string name="voice_no_internet">No internet connection</string>
+</resources>

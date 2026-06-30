@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Fondo del arranque (= fondo del SplashScreen). Evita el "flash" blanco inicial de Android.
+         Modo claro = CreamBackground; el modo oscuro está en values-night/colors.xml. -->
+    <color name="splash_background">#FAF9F6</color>
+
+    <!-- Icono de la app (logo). Modo claro: fondo marrón de marca, logo crema.
+         El modo oscuro (fondo negro, logo azul) está en values-night/colors.xml. -->
+    <color name="ic_launcher_bg">#A64A12</color>
+    <color name="ic_launcher_logo">#FAF9F6</color>
 </resources>

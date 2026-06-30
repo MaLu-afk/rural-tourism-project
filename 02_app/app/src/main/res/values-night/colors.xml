@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Variantes para MODO OSCURO (se aplican solas cuando el dispositivo está en modo oscuro). -->
+
+    <!-- Fondo del arranque = DeepBlackBackground del tema oscuro. -->
+    <color name="splash_background">#07090D</color>
+
+    <!-- Icono de la app en oscuro: fondo negro profundo, logo azul de alto contraste. -->
+    <color name="ic_launcher_bg">#07090D</color>
+    <color name="ic_launcher_logo">#38BDF8</color>
+</resources>
