@@ -83,7 +83,7 @@
 
 > Para quienes revisen o colaboren en este proyecto:
 
-- 📖 Leer la documentación en `01_documentacion/` antes de contribuir — cada archivo detalla una sección específica de la entrega
+- 📖 Leer la documentación en `01_documentacion/` antes de contribuir - cada archivo detalla una sección específica de la entrega
 - 🌿 Seguir el flujo de ramas definido: `feature/` → `develop` → `main`
 - 📝 Usar **Conventional Commits**: `feat:`, `fix:`, `docs:`, `refactor:`, `test:`
 - 🔄 No hacer push directo a `main` - siempre abrir un **Pull Request** desde `develop`
