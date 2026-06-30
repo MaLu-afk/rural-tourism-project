@@ -4,7 +4,7 @@
 
 <br/>
 
-![Estado](https://img.shields.io/badge/Estado-Primera%20Entrega-52b788?style=for-the-badge&logo=checkmarx&logoColor=white)
+![Estado](https://img.shields.io/badge/Estado-Entrega%20Final-52b788?style=for-the-badge&logo=checkmarx&logoColor=white)
 ![Plataforma](https://img.shields.io/badge/Plataforma-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)
@@ -22,9 +22,9 @@
 
 ## 📌 Descripción
 
-**Yupay Turismo** es una aplicación móvil *offline-first* para comunidades rurales del Perú que reemplaza el registro manual de visitantes turísticos (cuaderno) por una solución digital accesible, sin necesidad de internet. Los datos se sincronizan automáticamente cuando hay red disponible y se transforman en **insights visuales y audios en quechua y español**, facilitando la toma de decisiones tanto para emprendedores como para el MINCETUR.
+**Yupay Turismo** es una aplicación móvil *offline-first* diseñada para comunidades rurales del Perú, que sustituye el registro manual de visitantes turísticos (cuaderno) por una solución digital accesible, sin necesidad de internet. Los datos se almacenan localmente y se pueden sincronizar, tanto entre dispositivos cercanos (P2P) como con un servidor en la nube, cuando hay red disponible, transformándose en **insights visuales y audios en quechua y español**. El proyecto se desarrolló y se validó internamente por el equipo (pruebas manuales y automatizadas); no incluyó un despliegue con usuarios reales en campo.
 
-> Propuesta de solución al reto **"Del cuaderno al insight"** — MINCETUR · ProInnovate 2025
+> Propuesta de solución al reto **"Del cuaderno al insight"** - MINCETUR · ProInnovate 2025
 
 ---
 
@@ -34,24 +34,31 @@
 📁 rural-tourism-project/
 │
 ├── 📁 01_documentacion/
-│   ├── 📄 01_introduccion.md     → Objetivo y descripción del proyecto
-│   ├── 📄 02_justificacion.md    → Problema, público objetivo y solución
-│   ├── 📄 03_diseno.md           → Mockups, herramientas y flujo de pantallas
-│   ├── 📄 04_tecnologia.md      → Stack técnico y librerías
-│   ├── 📄 05_control_versiones.md     → Ramas, commits y flujo de trabajo
-│   └── 📄 06_funcionalidad.md    → Demo y módulos implementados
+│   ├── 📄 01_introduccion.md              → Objetivo y descripción del proyecto
+│   ├── 📄 02_justificacion.md             → Problema, público objetivo y solución
+│   ├── 📄 03_diseno.md                    → Mockups, herramientas y flujo de pantallas
+│   ├── 📄 04_tecnologia.md                → Stack técnico y librerías
+│   ├── 📄 05_control_versiones.md         → Ramas, commits y flujo de trabajo
+│   ├── 📄 06_arquitectura_desarrollo.md   → Patrón arquitectónico y organización del código
+│   ├── 📄 07_funcionalidades.md           → Módulos implementados y demo
+│   ├── 📄 08_pruebas.md                   → Pruebas manuales y automatizadas
+│   └── 📄 09_conclusiones.md              → Lecciones aprendidas y trabajo futuro
 │
-├── 📁 02_app/
-│   └── 📁 src/
-│       ├── 📁 data/              → Room · Retrofit · DataStore
-│       ├── 📁 domain/            → Casos de uso · Lógica de negocio
-│       └── 📁 presentation/      → ViewModels · Jetpack Compose UI
+├── 📁 02_app/                    → Proyecto Android (Kotlin · Jetpack Compose)
+│   ├── 📄 build.gradle.kts
+│   ├── 📄 settings.gradle.kts
+│   ├── 📄 .gitignore
+│   └── 📁 app/src/main/java/yupay/turismo/
+│       ├── 📁 data/              → Room (entidades, DAOs) · DataRepository · API REST · Auth
+│       ├── 📁 sync/              → Sincronización P2P (sockets TCP · NSD · QR)
+│       ├── 📁 tts/               → Síntesis de voz offline (Sherpa-ONNX)
+│       ├── 📁 notifications/, service/, di/  → Infraestructura de sincronización en segundo plano
+│       ├── 📁 ui/                → ViewModels · Compose (features, components, navigation, theme)
+│       └── 📁 utils/             → Utilidades (red, permisos, traducciones, moneda)
 │
-├── 📁 figma/                     → Assets y exportaciones de diseño
-├── 📄 .gitignore
-├── 📄 README.md
-└── 📄 build.gradle
+└── 📄 README.md
 ```
+
 
 ---
 
@@ -61,10 +68,10 @@
 
 | Integrante | Rol | GitHub |
 |:----------|:----|:------:|
-| 👨‍💻 Antony Ivan Mendoza Villar | Desarrollador | — |
-| 👨‍💻 Edithson Ricardo Aybar Escobar | Desarrollador | — |
-| 👩‍💻 Leily Marlith Llanos Angeles | Desarrolladora | [![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/LeilyDev) |
-| 👨‍💻 Magno Ricardo Luque Mamani | Desarrollador | — |
+| 👨‍💻 Antony Ivan Mendoza Villar | Interfaz y accesibilidad multimodal | [![GitHub](https://img.shields.io/badge/@Sh3ccid-181717?style=flat-square&logo=github)](https://github.com/Sh3ccid) |
+| 👨‍💻 Edithson Ricardo Aybar Escobar | Backend e identidad | [![GitHub](https://img.shields.io/badge/@Edithson1-181717?style=flat-square&logo=github)](https://github.com/Edithson1) |
+| 👩‍💻 Leily Marlith Llanos Angeles | Conectividad y plataforma | [![GitHub](https://img.shields.io/badge/@leilyllanos-181717?style=flat-square&logo=github)](https://github.com/LeilyDev) |
+| 👨‍💻 Magno Ricardo Luque Mamani | Persistencia y experiencia del emprendedor | [![GitHub](https://img.shields.io/badge/@MaLu-afk-181717?style=flat-square&logo=github)](https://github.com/MaLu-afk) |
 
 **Docentes:** Wilder Nina Choquehuayta · Percy Wilianson Lovon Ramos
 
@@ -76,11 +83,11 @@
 
 > Para quienes revisen o colaboren en este proyecto:
 
-- 📖 Leer la documentación en `/docs/` antes de contribuir — cada archivo detalla una sección específica de la entrega
+- 📖 Leer la documentación en `01_documentacion/` antes de contribuir - cada archivo detalla una sección específica de la entrega
 - 🌿 Seguir el flujo de ramas definido: `feature/` → `develop` → `main`
 - 📝 Usar **Conventional Commits**: `feat:`, `fix:`, `docs:`, `refactor:`, `test:`
-- 🔄 No hacer push directo a `main` — siempre abrir un **Pull Request** desde `develop`
-- 📱 Probar en dispositivos de **gama baja** (el público objetivo usa hardware básico)
+- 🔄 No hacer push directo a `main` - siempre abrir un **Pull Request** desde `develop`
+- 📱 Probar en dispositivos de **gama media-baja** (el público objetivo usa hardware básico)
 - 🌐 Verificar que las funciones críticas operan **sin conexión a internet**
 
 ---
