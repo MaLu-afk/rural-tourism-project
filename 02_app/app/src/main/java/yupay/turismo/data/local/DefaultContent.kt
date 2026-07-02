@@ -14,9 +14,9 @@ object DefaultContent {
     )
 
     val summaries: Map<String, String> = mapOf(
-        "Español" to "Este mapa muestra la distribución de tus visitas.\nLos puntos azules representan hospedaje.\nLos puntos verdes son de alimentación.\nLos puntos rojos indican artesanía.\nUsa el zoom para ver más detalles.",
-        "Quechua" to "Kay saywitipim watukuyniykikuna rakisqa kachkan.\nAnqas unanchakunaqa puñuy wasim.\nQ'umir unanchakunaqa mikhuy wasim.\nPuka unanchakunaqa makipi rurasqakuna.\nHatunyachiy aswan allinta qhawanaykipaq.",
-        "Inglés" to "This map shows the distribution of your visits.\nBlue points represent lodging.\nGreen points are for food services.\nRed points indicate handicrafts.\nUse zoom to see more details.",
-        "Portugués" to "Este mapa mostra a distribuição das suas visitas.\nOs pontos azuis representam hospedagem.\nOs pontos verdes são de alimentação.\nOs pontos vermelhos indicam artesanato.\nUse o zoom para ver mais detalhes."
+        "Español" to "Este mapa resume tus visitas por país de origen.\nCada país muestra de dónde vienen tus turistas.\nLos colores representan los productos que consumieron.\nEl tamaño refleja cuánto se vendió de cada uno.\nCambia entre puntos y burbujas para ver el detalle.",
+        "Quechua" to "Kay saywitipim watukuyniykikuna llaqtankuman hina rakisqa kachkan.\nSapa llaqtaqa maymantam turistaykikuna hamun chaytam rikuchin.\nLlimphukunaqa ima rurukunatam rantikurqan chaytam rikuchin.\nSayayninqa hayk'a rantikusqantam rikuchin.\nT'uqyakunata hinaspa muyukunata tikraspa aswan allinta qhaway.",
+        "Inglés" to "This map summarizes your visits by country of origin.\nEach country shows where your tourists come from.\nThe colors represent the products they consumed.\nThe size reflects how much of each one was sold.\nSwitch between points and bubbles to see the detail.",
+        "Portugués" to "Este mapa resume suas visitas por país de origem.\nCada país mostra de onde vêm seus turistas.\nAs cores representam os produtos que consumiram.\nO tamanho reflete quanto foi vendido de cada um.\nAlterne entre pontos e bolhas para ver o detalhe."
     )
 }
