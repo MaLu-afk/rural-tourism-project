@@ -16,12 +16,6 @@ import yupay.turismo.data.repository.SyncOutcome
 import yupay.turismo.data.session.SessionManager
 import yupay.turismo.utils.NetworkMonitor
 
-/**
- * Coordina la sincronización con la nube: serializa las operaciones (un solo sync a la vez)
- * y dispara [syncNow] automáticamente cuando vuelve la conexión o cuando aparecen cambios
- * locales pendientes en el outbox. La sincronización P2P por LAN (paquete `sync/`) es
- * independiente y no se ve afectada.
- */
 class CloudSyncEngine(
     private val repo: CloudSyncRepository,
     private val session: SessionManager,
@@ -51,17 +45,8 @@ class CloudSyncEngine(
     /** Sync incremental: drena el outbox y baja cambios desde la última marca. */
     suspend fun syncNow(): SyncOutcome = guarded(wait = false) { repo.syncNow() }
 
-    /**
-     * Sube a la nube los cambios que entraron por P2P/LAN (no pasan por el outbox). Reconcilia
-     * el estado local completo contra el servidor. Lo dispara la capa P2P ([SyncViewModel]).
-     */
     suspend fun reconcileFromP2p(): SyncOutcome = guarded(wait = false) { repo.reconcileLocalToCloud() }
 
-    /**
-     * Arranca los observadores que disparan la sync sola:
-     *  - al estar online + con sesión (reconexión / arranque),
-     *  - al crecer la cola de cambios pendientes mientras hay red.
-     */
     fun start(scope: CoroutineScope) {
         scope.launch {
             combine(networkMonitor.isOnline, session.isLoggedInFlow) { online, logged -> online && logged }
@@ -91,11 +76,17 @@ class CloudSyncEngine(
                     }
                 }
         }
-        // Sync en tiempo real: Realtime es la vía principal; el poll de respaldo de abajo cubre
-        // cortes del WebSocket o eventos perdidos.
+        scope.launch {
+            repo.unsyncedProductsCountFlow
+                .distinctUntilChanged()
+                .collect { count ->
+                    if (count > 0 && networkMonitor.isOnline.value && session.isLoggedIn()) {
+                        syncNow()
+                    }
+                }
+        }
         realtime.start(scope)
-        // Poll de respaldo (red de seguridad): un pull incremental periódico mientras hay red+sesión.
-        // Barato y protegido por el Mutex (no se solapa con otros syncs).
+      
         scope.launch {
             while (true) {
                 delay(POLL_INTERVAL_MS)

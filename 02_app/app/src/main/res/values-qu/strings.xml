@@ -294,7 +294,7 @@
     <string name="register_btn_register">Qillqakuy</string>
     <string name="register_divider_or">Utaq kaywan qillqakuy</string>
     <string name="register_exists_title">Cuenta ñam qillqasqaña</string>
-    <string name="register_exists_desc">Kay Google cuenta ñam qillqasqaña. Aswanqa yaykuy.</string>
+    <string name="register_exists_desc">Kay correowanqa cuenta ñam kachkanña. Aswanqa yaykuy.</string>
     <string name="register_exists_signin">Yaykuy</string>
     <string name="forgot_title">Cuentata Kutichiy</string>
     <string name="forgot_subtitle">Korreo elektronikuykita churay kutichiy yupayta chaskinaykipaq</string>

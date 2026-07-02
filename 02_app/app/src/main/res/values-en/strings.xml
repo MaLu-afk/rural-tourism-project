@@ -294,7 +294,7 @@
     <string name="register_btn_register">Sign up</string>
     <string name="register_divider_or">Or sign up with</string>
     <string name="register_exists_title">Account already registered</string>
-    <string name="register_exists_desc">This Google account is already registered. Sign in instead.</string>
+    <string name="register_exists_desc">An account with this email already exists. Sign in instead.</string>
     <string name="register_exists_signin">Sign in</string>
     <string name="forgot_title">Recover Account</string>
     <string name="forgot_subtitle">Enter your email address to receive a recovery code</string>

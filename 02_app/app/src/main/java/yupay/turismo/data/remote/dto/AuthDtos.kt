@@ -81,6 +81,7 @@ data class GoogleWebRequest(
 data class GoogleIdTokenRequest(
     val idToken: String,
     val nonce: String? = null,
+    val mode: String? = null,
     val hardwareDeviceId: String? = null,
     val deviceName: String? = null,
     val businessName: String? = null,

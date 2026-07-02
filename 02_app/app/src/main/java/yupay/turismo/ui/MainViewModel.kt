@@ -256,10 +256,14 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     fun preloadProducts(category: String) {
         viewModelScope.launch {
+            val linked = isLinked()
             // Eliminar productos previos que sean 'isDefault' para evitar duplicados al cambiar de opinión en el setup
             val all = repository.allProducts.first()
             val defaultsToDelete = all.filter { it.isDefault }
-            defaultsToDelete.forEach { repository.deleteProduct(it) }
+            defaultsToDelete.forEach { p ->
+                if (linked) cloudSync.enqueueProductDelete(p) // propagar la baja si el default ya se había subido
+                repository.deleteProduct(p)
+            }
 
             val products = when (category) {
                 "Hospedaje" -> listOf(
@@ -279,7 +283,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 else -> emptyList()
             }
             if (products.isNotEmpty()) {
-                repository.insertProducts(products)
+                products.forEach { p ->
+                    val newId = repository.insertProduct(p).toInt()
+                    if (linked) cloudSync.enqueueProductUpsert(newId)
+                }
             }
         }
     }
@@ -388,6 +395,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                     RegisterStatus.LOGGED_IN -> {
                         seedDefaultContentIfEmpty() // cuenta nueva: tips/mapas llegan al registrar
                         cloudSyncEngine.firstLink()
+                        markOnboardingCompleted() // alinear con login/Google: evita re-enrutar a onboarding ya enlazado
                         AuthUiState(event = AuthEvent.LoggedIn)
                     }
                     RegisterStatus.NEEDS_EMAIL_CONFIRMATION ->
@@ -396,7 +404,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                             info = "Revisa tu correo y confirma la cuenta para continuar."
                         )
                 }
-                is AuthResult.Err -> AuthUiState(error = r.message)
+                is AuthResult.Err ->
+                    if (r.code == 409) AuthUiState(event = AuthEvent.AccountAlreadyExists)
+                    else AuthUiState(error = r.message)
             }
         }
     }
@@ -411,6 +421,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 is AuthResult.Ok -> {
                     seedDefaultContentIfEmpty() // cuenta nueva: tips/mapas llegan al registrar
                     cloudSyncEngine.firstLink()
+                    markOnboardingCompleted() // alinear con login/Google: evita re-enrutar a onboarding ya enlazado
                     AuthUiState(event = AuthEvent.LoggedIn)
                 }
                 is AuthResult.Err -> AuthUiState(error = r.message)
@@ -432,18 +443,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    /**
-     * LOGIN con Google (pantalla de inicio de sesión).
-     * - Cuenta nueva (no existía en Supabase): inicia sesión y **siembra datos por defecto**
-     *   (nombre/sector/productos) — caso 1.
-     * - Cuenta existente: login normal y baja sus datos — caso 2.
-     */
     fun signInWithGoogle(idToken: String, nonce: String? = null) {
         runAuth {
-            when (val r = authRepository.loginWithGoogleIdToken(idToken, nonce)) {
+            when (val r = authRepository.loginWithGoogleIdToken(idToken, nonce, mode = "login")) {
                 is AuthResult.Ok -> {
                     if (r.value) {
-                        seedDefaultBusinessData()   // isNewUser → datos por defecto
+                        seedDefaultBusinessData()   // defensivo: isNewUser → datos por defecto
                         seedDefaultContentIfEmpty() // y tips/mapas, para subirlos en firstLink
                     }
                     cloudSyncEngine.firstLink()
@@ -464,7 +469,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
      */
     fun signUpWithGoogle(idToken: String, nonce: String? = null) {
         runAuth {
-            when (val r = authRepository.loginWithGoogleIdToken(idToken, nonce)) {
+            when (val r = authRepository.loginWithGoogleIdToken(idToken, nonce, mode = "register")) {
                 is AuthResult.Ok -> {
                     if (r.value) {
                         seedDefaultContentIfEmpty() // cuenta nueva: tips/mapas llegan al registrar
@@ -472,12 +477,16 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                         markOnboardingCompleted()
                         AuthUiState(event = AuthEvent.LoggedIn)
                     } else {
-                        // La cuenta de Google ya existía → no se permite "registrar".
+                        // Defensivo: con mode=register la API responde 409 (rama Err de abajo).
+                        // Si aun así llegara isNewUser=false, tratamos igual "cuenta ya usada".
                         authRepository.discardLocalSession()
                         AuthUiState(event = AuthEvent.AccountAlreadyExists)
                     }
                 }
-                is AuthResult.Err -> AuthUiState(error = r.message)
+                // 409 = la cuenta de Google ya existía → no se permite "registrar".
+                is AuthResult.Err ->
+                    if (r.code == 409) AuthUiState(event = AuthEvent.AccountAlreadyExists)
+                    else AuthUiState(error = r.message)
             }
         }
     }

@@ -32,6 +32,9 @@ interface VisitDao {
     @Query("SELECT * FROM visits WHERE remoteId = :remoteId LIMIT 1")
     suspend fun getByRemoteId(remoteId: Long): Visit?
 
+    @Query("DELETE FROM visits WHERE remoteId = :remoteId")
+    suspend fun deleteByRemoteId(remoteId: Long): Int
+
     @Query("SELECT * FROM visits WHERE uuid = :uuid LIMIT 1")
     suspend fun getByUuid(uuid: String): Visit?
 
@@ -41,7 +44,6 @@ interface VisitDao {
     @Query("SELECT * FROM visits ORDER BY registrationDate DESC")
     suspend fun getAllOnce(): List<Visit>
 
-    /** Visitas aún no subidas a la nube (sin id de servidor). */
     @Query("SELECT * FROM visits WHERE remoteId IS NULL ORDER BY registrationDate ASC")
     suspend fun getUnsynced(): List<Visit>
 

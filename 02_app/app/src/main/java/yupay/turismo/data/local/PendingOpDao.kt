@@ -17,9 +17,11 @@ interface PendingOpDao {
     @Query("SELECT COUNT(*) FROM pending_ops")
     suspend fun count(): Int
 
-    /** ¿Hay alguna operación pendiente (no enviada) para este tipo de entidad? (p.ej. PROFILE). */
     @Query("SELECT EXISTS(SELECT 1 FROM pending_ops WHERE entityType = :entityType)")
     suspend fun hasPending(entityType: String): Boolean
+
+    @Query("SELECT EXISTS(SELECT 1 FROM pending_ops WHERE entityType = :entityType AND localId = :localId)")
+    suspend fun hasPendingForEntity(entityType: String, localId: Int): Boolean
 
     @Insert
     suspend fun insert(op: PendingOp): Long
@@ -30,11 +32,6 @@ interface PendingOpDao {
     @Query("DELETE FROM pending_ops WHERE id = :id")
     suspend fun deleteById(id: Long)
 
-    /**
-     * Coalescencia: descarta operaciones previas de la MISMA entidad local antes de encolar
-     * la nueva, de modo que sólo se conserve el estado más reciente (CREATE→UPDATE→… colapsa
-     * a una sola op; el motor decide POST/PUT según exista o no `remoteId`).
-     */
     @Query("DELETE FROM pending_ops WHERE entityType = :entityType AND localId = :localId")
     suspend fun deleteForEntity(entityType: String, localId: Int)
 

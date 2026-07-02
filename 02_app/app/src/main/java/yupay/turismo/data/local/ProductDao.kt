@@ -23,10 +23,6 @@ interface ProductDao {
         insertProducts(products)
     }
 
-    /**
-     * Aplica un merge en UNA sola transacción (borra los eliminados y upserta el resto), de modo que
-     * Room invalide la tabla una única vez y el observador de `allProducts` no vea estados parciales.
-     */
     @Transaction
     suspend fun applyMerge(deletes: List<Product>, upserts: List<Product>) {
         deletes.forEach { deleteProduct(it) }
@@ -47,6 +43,15 @@ interface ProductDao {
 
     @Query("SELECT * FROM products WHERE remoteId = :remoteId LIMIT 1")
     suspend fun getByRemoteId(remoteId: Long): Product?
+
+    @Query("DELETE FROM products WHERE remoteId = :remoteId")
+    suspend fun deleteByRemoteId(remoteId: Long): Int
+
+    @Query("SELECT * FROM products WHERE remoteId IS NULL ORDER BY createdAt ASC")
+    suspend fun getUnsynced(): List<Product>
+
+    @Query("SELECT COUNT(*) FROM products WHERE remoteId IS NULL")
+    fun countUnsyncedFlow(): Flow<Int>
 
     @Query("SELECT * FROM products WHERE uuid = :uuid LIMIT 1")
     suspend fun getByUuid(uuid: String): Product?

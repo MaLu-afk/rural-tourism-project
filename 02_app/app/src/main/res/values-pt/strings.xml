@@ -287,7 +287,7 @@
     <string name="register_btn_register">Cadastrar-se</string>
     <string name="register_divider_or">Ou cadastre-se com</string>
     <string name="register_exists_title">Conta já registrada</string>
-    <string name="register_exists_desc">Esta conta do Google já está registrada. Entre em vez disso.</string>
+    <string name="register_exists_desc">Já existe uma conta com este e-mail. Entre em vez disso.</string>
     <string name="register_exists_signin">Entrar</string>
     <string name="forgot_title">Recuperar Conta</string>
     <string name="forgot_subtitle">Insira seu e-mail para receber um código de recuperação</string>

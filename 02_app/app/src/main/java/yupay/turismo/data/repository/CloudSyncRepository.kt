@@ -58,6 +58,9 @@ class CloudSyncRepository(
     /** Nº de visitas locales aún no subidas a la nube (para disparar la sync). */
     val unsyncedVisitsCountFlow = visitDao.countUnsyncedFlow()
 
+    /** Nº de productos locales aún no subidos a la nube (para disparar la sync). */
+    val unsyncedProductsCountFlow = productDao.countUnsyncedFlow()
+
     // ───────────────── Encolado (offline) ─────────────────
     suspend fun enqueueProductUpsert(localId: Int) =
         enqueue(PendingOp.ENTITY_PRODUCT, PendingOp.OP_UPDATE, localId, "")
@@ -138,6 +141,10 @@ class CloudSyncRepository(
 
         if (!pushPendingVisits()) {
             return SyncOutcome.Error("Visitas pendientes de subir; se reintentará al reconectar.", offline = true)
+        }
+
+        if (!pushPendingProducts()) {
+            return SyncOutcome.Error("Productos pendientes de subir; se reintentará al reconectar.", offline = true)
         }
 
         val settings = appSettingsDao.getSettingsOnce() ?: AppSettings()
@@ -249,6 +256,19 @@ class CloudSyncRepository(
                 is ApiResult.Fail -> {
                     if (r.offline || r.code in 500..599 || r.code == 401) return false
                     // 4xx de cliente: saltar esta visita y seguir con las demás.
+                }
+            }
+        }
+        return true
+    }
+
+    private suspend fun pushPendingProducts(): Boolean {
+        for (p in productDao.getUnsynced()) {
+            when (val r = api.createProduct(p.toRequestDto())) {
+                is ApiResult.Ok -> productDao.updateProduct(p.copy(remoteId = r.data.id))
+                is ApiResult.Fail -> {
+                    if (r.offline || r.code in 500..599 || r.code == 401) return false
+                    // 4xx de cliente: saltar este producto y seguir con los demás.
                 }
             }
         }
@@ -367,12 +387,9 @@ class CloudSyncRepository(
             pull.products.forEach { dto ->
                 val existing = productDao.getByRemoteId(dto.id)
                 if (existing != null) {
-                    // Preservar el uuid local (identidad estable para el merge P2P): el servidor no lo
-                    // maneja, así que toEntity generaría uno nuevo en cada pull.
+                    if (pendingOpDao.hasPendingForEntity(PendingOp.ENTITY_PRODUCT, existing.id)) return@forEach
                     val entity = dto.toEntity(localId = existing.id).copy(uuid = existing.uuid)
                     productDao.updateProduct(entity)
-                    // Sólo cuenta si el servidor lo modificó después de lo que ya teníamos (el solape
-                    // del watermark puede re-traer filas sin cambios: no deben re-notificar).
                     if (entity.lastModified > existing.lastModified) changedProducts++
                 } else {
                     productDao.insertProduct(dto.toEntity())
@@ -398,6 +415,15 @@ class CloudSyncRepository(
         }
 
         if (!replace) {
+            pull.deletions.forEach { d ->
+                when (d.type) {
+                    "product" -> if (productDao.deleteByRemoteId(d.id) > 0) changedProducts++
+                    "visit" -> visitDao.deleteByRemoteId(d.id)
+                }
+            }
+        }
+
+        if (!replace) {
             if (newVisits > 0) syncEventBus.emit(SyncEvent.NewVisits(newVisits))
             if (changedProducts > 0) syncEventBus.emit(SyncEvent.ProductsChanged(changedProducts))
             if (merged.entrepreneurTips != settings.entrepreneurTips) syncEventBus.emit(SyncEvent.TipsChanged)
@@ -412,12 +438,6 @@ class CloudSyncRepository(
         )
     }
 
-    /**
-     * Watermark del próximo `?since=`: la hora del SERVIDOR (no la del dispositivo), menos un
-     * margen de solape. Usar la hora del servidor evita que un reloj de dispositivo adelantado
-     * deje el `since` "en el futuro" y se salte cambios para siempre (clock skew). El solape
-     * reprocesa unas pocas filas, lo cual es inocuo porque [applyPull] es idempotente.
-     */
     private fun watermarkFrom(pull: PullResponse, fallback: Long): Long {
         val serverMs = parseIsoToMillis(pull.serverTime)
         return (serverMs ?: fallback) - OVERLAP_MS

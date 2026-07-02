@@ -164,8 +164,14 @@ data class PullResponse(
     val products: List<ProductResponseDto> = emptyList(),
     val visits: List<VisitResponseDto> = emptyList(),
     val content: List<ContentResponseDto> = emptyList(),
-    /** Hora del servidor (ISO 8601) al inicio del pull; el cliente la usa como watermark. */
+    val deletions: List<DeletionDto> = emptyList(),
     val serverTime: String? = null
+)
+
+@Serializable
+data class DeletionDto(
+    val type: String = "",
+    val id: Long = 0
 )
 
 // ---------------- genéricos ----------------
