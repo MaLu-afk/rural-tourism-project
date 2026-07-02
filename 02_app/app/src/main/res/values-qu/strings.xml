@@ -1,0 +1,424 @@
+<resources>
+    <!-- Onboarding -->
+    <string name="onboarding_title_0">Mana internetniyuq watukuqkunata qillqay</string>
+    <string name="onboarding_desc_0">Maypipas watukuqniykikunata kamachiy, mana internetniyuq kaspapas.</string>
+    <string name="onboarding_btn_0">Qallariy</string>
+    <string name="onboarding_title_1">Llamkayniykipa rurunta qhaway</string>
+    <string name="onboarding_desc_1">Llamkayniyki imayna kachkasqanta yachay sasan qhawana siq\'ikunawan.</string>
+    <string name="onboarding_btn_1">Qatiqnin</string>
+    <string name="onboarding_title_2">Yuyaychaykunata chaskiy</string>
+    <string name="onboarding_desc_2">Llamkayniyki aswan allin kananpaq, quechuapi otaq españolpi rimaykunata uyariy.</string>
+    <string name="onboarding_btn_2">Ñuqaq qillqayniy ruray</string>
+    <string name="onboarding_link_device">huk q\'illayta t\'inkiy</string>
+    <string name="onboarding_perm_title">Llika unanchakuna</string>
+    <string name="onboarding_perm_desc">Kay q\'illayta t\'inkinapaq, WiFi llika kamachinapaq unanchakuna necesitayku.</string>
+
+    <!-- Home -->
+    <string name="home_greeting">¡Napaykullayki, %s!</string>
+    <string name="home_category">Llank\'ay: %s</string>
+    <string name="home_tip_title">Yachayniyuqpa yuyaychaynin</string>
+    <string name="home_recent_visits">Qhipa qillqasqakuna</string>
+    <string name="home_tourist_country">Purikuq / Suyu</string>
+    <string name="home_est_expense">Chaninchasqa qullqi</string>
+    <string name="home_no_records">Manan kanchu qillqasqakuna</string>
+    <string name="time_day">P\'unchay</string>
+    <string name="time_week">Sem</string>
+    <string name="time_month">Killa</string>
+    <string name="time_year">Wata</string>
+    <string name="chart_today">Kunan p\'unchay watukuykuna</string>
+    <string name="chart_week">Semana watukuykuna</string>
+    <string name="chart_month">Semana watukuykuna (Killa)</string>
+    <string name="chart_year">Killa watukuykuna (Wata)</string>
+    <string name="day_mon">Lun</string>
+    <string name="day_tue">Mar</string>
+    <string name="day_wed">Mie</string>
+    <string name="day_thu">Jue</string>
+    <string name="day_fri">Vie</string>
+    <string name="day_sat">Sab</string>
+    <string name="day_sun">Dom</string>
+    <string name="month_jan">Ene</string>
+    <string name="month_feb">Feb</string>
+    <string name="month_mar">Mar</string>
+    <string name="month_apr">Abr</string>
+    <string name="month_may">May</string>
+    <string name="month_jun">Jun</string>
+    <string name="month_jul">Jul</string>
+    <string name="month_aug">Ago</string>
+    <string name="month_sep">Sep</string>
+    <string name="month_oct">Oct</string>
+    <string name="month_nov">Nov</string>
+    <string name="month_dec">Dic</string>
+    <string name="chart_week_label">Sem %d</string>
+
+    <!-- Profile Setup -->
+    <string name="setup_title">Qillqayniykita allichay</string>
+    <string name="setup_business_name_label">Llank\'ayniykipa sutin</string>
+    <string name="setup_business_name_hint">Kayna: Suyu makipi rurasqakuna</string>
+    <string name="setup_service_question">¿Ima yanapakuyta aswanta qunki?</string>
+    <string name="setup_save_btn">WAQAYCHAY HINASPA HAYKUY</string>
+
+    <!-- Map -->
+    <string name="map_title">Watukuypa saywiti</string>
+    <string name="map_legend">Yanapakuykunapa unanchachan</string>
+    <string name="map_summary_title">Saywitipa pisichaynin</string>
+    <string name="map_listen_summary">Pisichayta uyariy</string>
+    <string name="map_expand">Hatunyachiy</string>
+
+    <!-- Tip Detail -->
+    <string name="tip_detail_title">Yachayniyuqpa yuyaychaynin</string>
+    <string name="tip_detail_subtitle">P\'unchaypa yuyaychaynin</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Ñuqaq qillqayniy</string>
+    <string name="profile_edit">Allichay</string>
+    <string name="profile_settings_title">App nisqapa allichaynin</string>
+    <string name="profile_language">Rimay</string>
+    <string name="profile_voice_speed">Kunkaq utqaynin</string>
+    <string name="profile_notifications">Willaykuna</string>
+    <string name="profile_link_device">Musuq q\'illayta t\'inkiy</string>
+    <string name="profile_linked_devices">T\'inkisqa q\'illaykuna</string>
+    <string name="profile_logout">Lluqsiy</string>
+    <string name="profile_info_title">Willakuy</string>
+    <string name="profile_help">Yanapay</string>
+    <string name="profile_privacy">Willakuy amachay</string>
+    <string name="profile_edit_title">Qillqayta allichay</string>
+    <string name="profile_photo_change">Rikch\'ayta t\'ijray</string>
+    <string name="profile_business_name">Llank\'aypa sutin</string>
+    <string name="profile_sector">Ima llank\'ay</string>
+    <string name="profile_save_changes">ALLICHASQAKUNATA WAQAYCHAY</string>
+    <string name="profile_logout_confirm_title">¿Lluqsiyta munanki?</string>
+    <string name="profile_logout_confirm_desc">Kunan llamk\'ay wichq\'akunqa, qallariy qhawana p\'unchayman kutinki. Musuqmanta t\'inkikunayki tiyan rurukunata t\'inkinapaq.</string>
+    <string name="profile_online">Llikapi</string>
+    <string name="profile_offline">Mana llikapi</string>
+
+    <!-- Services -->
+    <string name="service_lodging">Puñuy wasi</string>
+    <string name="service_food">Mikhuy wasi</string>
+    <string name="service_handicraft">Makipi rurasqakuna</string>
+    <string name="service_others">Tukuymiraq</string>
+
+    <!-- Visits -->
+    <string name="visits_title">Watukuykunapa qillqasqan</string>
+    <string name="visits_add">Watukuyta yapay</string>
+    <string name="visits_search_hint">Suyupi maskhay…</string>
+    <string name="visits_detail_title">Watukuypa imayna kasqan</string>
+    <string name="visits_date">P\'unchay</string>
+    <string name="visits_country">Suyu</string>
+    <string name="visits_price">Chaninchasqa qullqi</string>
+    <string name="visits_services">Yanapakuykuna qusqa</string>
+    <string name="add_visit_title">Musuq watukuyta qillqay</string>
+    <string name="add_visit_country_label">Paqarisqan suyu</string>
+    <string name="add_visit_price_label">Chaninchasqa qullqi</string>
+    <string name="add_visit_services_label">Yanapakuykuna qusqa</string>
+    <string name="add_visit_save">QILLQASQATA WAQAYCHAY</string>
+    <string name="select_option">Ima kasqanta akllay</string>
+    <string name="select_range">Chaninchasqa qullqita akllay</string>
+    <string name="price_type_range">Tupuy</string>
+    <string name="price_type_fixed">Kikin</string>
+    <string name="price_type_custom">Kikin ruray</string>
+    <string name="record_label">Qillqasqa</string>
+    <string name="sent_record">Qillqasqa apachisqa</string>
+    <string name="pending_record">Apachinapaq kachkan</string>
+    <string name="sent_on">Apachisqa p\'unchay</string>
+
+    <!-- Time Ago & Categories -->
+    <string name="time_now">Kunanpacha</string>
+    <string name="time_min_ago">Ñapaq %d min</string>
+    <string name="time_hours_ago">Ñapaq %d horas</string>
+    <string name="time_hour_ago">Ñapaq 1 hora</string>
+    <string name="time_yesterday">Qayna p\'unchay</string>
+    <string name="time_days_ago">Ñapaq %d p\'unchaykuna</string>
+    <string name="cat_today">Kunan</string>
+    <string name="cat_yesterday">Qayna p\'unchay</string>
+    <string name="cat_this_week">Kay semana</string>
+    <string name="cat_this_month">Kay killa</string>
+    <string name="cat_this_year">Kay wata</string>
+    <string name="cat_older">Watamanta aswan</string>
+    <string name="total_records">%d llapan</string>
+    <string name="no_records_yet">Manaraq kanchu qillqasqakuna</string>
+    <string name="tourist_label">Purikuq</string>
+
+    <!-- Info Screens -->
+    <string name="help_content">Kaypi yachay imayna Yupay Turismo app nisqata llamk\'achinaykipaq llank\'ayniyki aswan allin kananpaq.\n\n1. Watukuykuna qillqay: Visitas otaq Home qhawana p\'unchayman riy, hinaspa + ñit\'iy. Purikuqkuna maymanta hamusqanta, chaninchasqa qullqita, hinaspa yanapakuykuna qusqaykita qillqayta atinki.\n\n2. Llank\'aypa siq\'inkuna: Home nisqapi, P\'unchay, Semana, Killa, Wata akllaykunata llamk\'achiy watukuyniykikuna imayna kasqanta yachanaykipaq.\n\n3. Saywiti: Purikuqkuna maymanta hamusqanta qhaway. Kayqa yanapasunki mayqan purikuqkunata aswan allinta chaskinaykipaq.\n\n4. T\'inkiy: Askha q\'illaykunata (celular otaq tablet) t\'inkiyta atinki QR nisqawan, chaynapi llapan qillqasqakuna kunanchasqa kanqa mana internetwanpas.\n\n5. Yuyaychaykunata uyariy: Sapa p\'unchay rimaykunata uyariy quechuapi otaq españolpi llamk\'ayniyki aswan allin kananpaq.</string>
+    <string name="privacy_content">Yupay Turismo nisqapiqa, willakuyniykikuna amachayqa ancha allinmi.\n\n1. Waqaychay: Llapan qillqasqaykiqa (watukuykuna, sutikuna, perfilkuna) q\'illayniykillapim waqaychasqa kachkan. Manan hukkunamanqa richkanchu.\n\n2. Kikin t\'inkiy: Iskay q\'illaykunata t\'inkiptiykiqa, willakuykunaqa kikillankupim t\'inkikunku WiFi otaq Punto de Acceso nisqawan.\n\n3. Willakuykuna llamk\'achiy: Watukuymanta willakuykunaqa yupaykunallapaq llamk\'achisqa kanqa. Yupay Turismoqa manan hukkunaman willakuyniykikunata quykuchu.\n\n4. Unanchakuna: Kamarataqa QR escanianallapaqmi mañayku, llika unanchakunatataq q\'illaykuna t\'inkinallapaq.</string>
+
+    <!-- Scanner -->
+    <string name="scanner_opening">Google escáner nisqa kicharikuchkan...</string>
+    <string name="scanner_error">Escaner kichaypi pantay kachkan</string>
+    <string name="scanner_timeout_title">Scanner p\'unchay tukukun</string>
+    <string name="scanner_timeout_desc">Mana kanchu qillqasqa p\'unchay tukukun (45s).</string>
+
+    <!-- General -->
+    <string name="btn_cancel">TATICHAY</string>
+    <string name="btn_confirm">ARÍ</string>
+    <string name="btn_close">WICHQ\'AY</string>
+    <string name="btn_back">Qhipaman</string>
+    <string name="btn_retry">MUSUQMANTA RURAY</string>
+    <string name="btn_save">WAQAYCHAY</string>
+    <string name="btn_continue">HINALLA</string>
+    <string name="btn_exit_without_save">WAQAYCHAY MANA ALLICHASPA LLUQSIY</string>
+
+    <!-- Permissions -->
+    <string name="perm_required_title">Unanchakuna necesitakun</string>
+    <string name="perm_required_desc">Huk q\'illayta t\'inkinapaq kamara hinaspa llika llamk\'aykunapaq unanchakunata necesitayku.</string>
+    <string name="perm_grant">Quy</string>
+    <string name="perm_settings_title">Unanchakuna necesitakun</string>
+    <string name="perm_settings_desc">Wakin unanchakunaqa t\'inkinapaq necesitakunmi. Allichaykunapi kichariy.</string>
+    <string name="perm_open_settings">Allichaykunata kichariy</string>
+
+    <!-- Linked Devices -->
+    <string name="linked_devices_title">T\'inkisqa q\'illaykuna</string>
+    <string name="linked_devices_empty">Manan kanchu t\'inkisqa q\'illaykuna</string>
+    <string name="linked_devices_empty_hint">\'Musuq q\'illayta t\'inkiy\' nisqata llamk\'achiy perfilpi</string>
+    <string name="linked_devices_disconnect_all">Llapan t\'inkisqa llamk\'aykunata wichq\'ay</string>
+    <string name="linked_devices_disconnect_confirm_title">¿T\'inkisqa servidorta resetearmunki?</string>
+    <string name="linked_devices_disconnect_confirm_desc">\'%s\' servidormanta llapan willakuykuna qullunqa, qallariyman kutinqa. ¿Allinchu?</string>
+    <string name="linked_devices_disconnect_btn">KARUMAN RESETEAY</string>
+    <string name="linked_devices_mass_disconnect_title">¿Llapan llamk\'aykunata wichq\'ay?</string>
+    <string name="linked_devices_mass_disconnect_desc">Kay rurayqa llapan kunan t\'inkisqa q\'illaykunaman reseteayta apachinqa. Manan kutichiyta atinkichu.</string>
+    <string name="linked_devices_mass_disconnect_btn">LLAPANTIN WICHQ\'AY</string>
+    <string name="linked_devices_connected_now">Kunan t\'inkisqa</string>
+    <string name="linked_devices_disconnected">Mana t\'inkisqa</string>
+    <string name="linked_devices_disconnect_action">T\'inkita p\'itiy</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_unsaved_title">Mana waqaychasqa allichaykuna</string>
+    <string name="exit_unsaved_desc">Mana waqaychasqa allichaykuna kachkan. ¿Lluqsiyta munanki icha puntata waqaychayta?</string>
+
+    <!-- Dashboard/Insights -->
+    <string name="dashboard_title">Analytics nisqapa qhawana p\'unchaynin</string>
+    <string name="insights_total_visitors">Llapan watukuqkuna</string>
+    <string name="insights_top_countries">Suyu ranking</string>
+    <string name="insights_services">Yanapakuykunapa rakiynin</string>
+    <string name="insights_leader_country">Ñawpaq suyu</string>
+    <string name="insights_star_service">Aswan allin yanapakuy</string>
+    <string name="insights_tts_description">Insights pisichayta uyariy</string>
+    <string name="insights_filter_all">Llapan</string>
+    <string name="insights_filter_month">Kay killa</string>
+    <string name="insights_filter_year">Kay wata</string>
+    <string name="insights_filter_week">Qhipa 7 p\'unchaykuna</string>
+    <string name="insights_revenue_est">Chaninchasqa qullqi yaykusqan</string>
+    <string name="insights_peak_hours">Aswan watukuq horakuna</string>
+    <string name="insights_visits_density">Watukuypa densidadnin</string>
+    <string name="insights_tab_summary">Pisilla</string>
+    <string name="insights_tab_visitors">Watukuqkuna</string>
+    <string name="insights_tab_sales">Qhatu</string>
+    <string name="insights_tab_times">Pachakuna</string>
+    <string name="insights_avg_ticket">Kuska gasto</string>
+    <string name="insights_revenue_over_time">Qullqi yaykusqan pachapi</string>
+    <string name="insights_visits_weekday">Watukuy sapa p\'unchaw</string>
+    <string name="insights_visitors_over_time">Watukuqkuna pachapi</string>
+    <string name="insights_revenue_by_service">Qullqi yanapakuyninmanta</string>
+    <string name="insights_total_items">Rantisqa kusakuna</string>
+    <string name="insights_total_revenue">Llapan qullqi</string>
+    <string name="insights_busiest_hour">Aswan hunt\'a hora</string>
+    <string name="insights_busiest_day">Aswan hunt\'a p\'unchaw</string>
+    <string name="insights_part_of_day">Watukuy horaq rakiynin</string>
+    <string name="insights_morning">Tutamanta</string>
+    <string name="insights_afternoon">Chawpi p\'unchaw</string>
+    <string name="insights_evening">Tuta</string>
+    <string name="insights_no_data">Mana willakuy kay pachapi</string>
+    <!-- Catalog -->
+    <string name="catalog_title">Rurukuna qhawana</string>
+    <string name="catalog_add_product">Ruruta yapay</string>
+    <string name="catalog_edit_product">Ruruta allichay</string>
+    <string name="catalog_empty">Manaraq kanchu rurukuna qhawanapi.</string>
+    <string name="catalog_product_name">Ruru sutin</string>
+    <string name="catalog_product_price">Qallariy chanin</string>
+    <string name="catalog_finish_setup">TUKUCHAY HINASPA HAYKUY</string>
+    <string name="catalog_setup_desc">Rurukuna qusqaykita allichay vendey qallarinaykipaq.</string>
+    <string name="product_label">Ruru</string>
+    <string name="quantity_label">Hayka</string>
+    <string name="discount_label">Pisi chanin</string>
+    <string name="subtotal_label">Subtotal</string>
+    <string name="total_label">Llapan</string>
+    <string name="discount_type_fixed">Kikin qullqi (S/)</string>
+    <string name="discount_type_percent">Porcentaje (%)</string>
+    <string name="catalog_delete_confirm_title">¿Ruruta qulluy?</string>
+    <string name="catalog_delete_confirm_desc">¿Allinchu kachkanki \'%s\' qulluyta? Kay rurayqa manan kutichiyta atinkichu.</string>
+    <string name="catalog_product_currency">Qullqi</string>
+    <string name="catalog_product_category">Ima llank\'ay</string>
+    <string name="catalog_discount_active">Pisi chanin kachkan</string>
+    <string name="catalog_discount_start">Qallariy p\'unchay</string>
+    <string name="catalog_discount_end">Tukuy p\'unchay</string>
+    <string name="profile_currency">Qullqi akllasqa</string>
+    <string name="currency_selection_desc">Llamk\'ayniykikunapaq aswan allin qullqita akllay. Rurukuna chaninqa kikillanmanta t\'ijrakunqa.</string>
+    <string name="currency_soles">Soles</string>
+    <string name="currency_dollars">Dólares</string>
+    <string name="currency_euros">Euros</string>
+    <string name="currency_exchange_rate">T\'ijray: 1 %1$s = S/ %2$s</string>
+    <string name="currency_local">Kikin qullqi</string>
+    <string name="sort_by_label">Allichay kaywan:</string>
+    <string name="sort_option_name">Suti</string>
+    <string name="sort_option_price">Chanin</string>
+    <string name="sort_option_date">P\'unchay</string>
+    <string name="content_desc_switch_discount">Pisi chaninta t\'ijray</string>
+    <string name="profile_sector_change_title">¿Ima llank\'ay t\'ijray?</string>
+    <string name="profile_sector_change_desc">Sectorta t\'ijraptiykiqa, musuq kategoriapi mana kachkaq rurukuna qullunqa. ¿Hinalla munankichu?</string>
+    <string name="search_product_hint">Ruruta maskhay...</string>
+    <string name="search_country_hint">Suyuta maskhay...</string>
+
+    <!-- ===== Externalización UI (i18n) — TODO: traducción quechua pendiente de revisión ===== -->
+    <string name="nav_home">Qallariy</string>
+    <string name="nav_visits">Watukuykuna</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="audio_cd_rewind">10s kutiy</string>
+    <string name="audio_cd_pause">Sayachiy</string>
+    <string name="audio_cd_play">Uyariy</string>
+    <string name="audio_cd_forward">10s ñawpaqman</string>
+    <string name="loading_settings">Allichaykunata chaskichkan...</string>
+    <string name="loading_resources">Recursokunata wakichichkan...</string>
+    <string name="auth_email_label">Korreo elektroniku</string>
+    <string name="auth_password_label">Yaykuna rima</string>
+    <string name="auth_cd_show_password">Yaykuna rimata rikuchiy</string>
+    <string name="auth_cd_hide_password">Yaykuna rimata pakay</string>
+    <string name="auth_continue_google">Google-wan catiy</string>
+    <string name="auth_divider_or">UTAQ</string>
+    <string name="auth_google_signing_in">Google-wan yaykuchkani…</string>
+    <string name="auth_google_connecting">Google-wan tinkuchkani…</string>
+    <string name="auth_btn_close">Wichqay</string>
+    <string name="pwd_rule_min_length">Pisillapas 8 sananpa</string>
+    <string name="pwd_rule_upper">Hukllapas hatun qillqa</string>
+    <string name="pwd_rule_lower">Hukllapas huch\'uy qillqa</string>
+    <string name="pwd_rule_digit">Hukllapas yupay</string>
+    <string name="pwd_rule_special">Hukllapas sapaq sananpa</string>
+    <string name="pwd_rule_match">Yaykuna rimakuna tinkun</string>
+    <string name="login_title">Yaykuy</string>
+    <string name="login_subtitle">Sutiykikunata churay sincronizasqa cuentaykiman yaykunaykipaq</string>
+    <string name="login_forgot_password">¿Yaykuna rimaykita qunqarqankichu?</string>
+    <string name="login_btn_enter">Yaykuy</string>
+    <string name="login_link_offline">Cuenta mana kaptin watay (Offline)</string>
+    <string name="register_title">Qillqakuy</string>
+    <string name="register_subtitle">Cuentaykita ruway datoykikunata phuyupi sincronizanaykipaq</string>
+    <string name="register_btn_register">Qillqakuy</string>
+    <string name="register_divider_or">Utaq kaywan qillqakuy</string>
+    <string name="register_exists_title">Cuenta ñam qillqasqaña</string>
+    <string name="register_exists_desc">Kay correowanqa cuenta ñam kachkanña. Aswanqa yaykuy.</string>
+    <string name="register_exists_signin">Yaykuy</string>
+    <string name="forgot_title">Cuentata Kutichiy</string>
+    <string name="forgot_subtitle">Korreo elektronikuykita churay kutichiy yupayta chaskinaykipaq</string>
+    <string name="forgot_btn_send_code">Yupayta Apachiy</string>
+    <string name="reset_title">Musuq Yaykuna Rima</string>
+    <string name="reset_title_account">Yaykuna Rimata Churay</string>
+    <string name="reset_subtitle">Musuq yaykuna rimaykita churay cuentaykiman yaykunaykipaq</string>
+    <string name="reset_subtitle_account">Hukllapas yaykuna rimata ruway korreoykiwanpas yaykunaykipaq</string>
+    <string name="reset_new_password_label">Musuq yaykuna rima</string>
+    <string name="reset_confirm_password_label">Yaykuna rimata takyachiy</string>
+    <string name="reset_btn_update">Yaykuna Rimata Musuqchay</string>
+    <string name="otp_title">Takyachiy</string>
+    <string name="otp_subtitle">%1$d sananpayuq yupayta churay, kayman apachisqa</string>
+    <string name="otp_paste_clipboard">Yupayta portapapelesmanta laqay</string>
+    <string name="otp_btn_verify">Yupayta Takyachiy</string>
+    <string name="otp_resend">¿Yupayta mana chaskirqankichu? Kutichiy apachiy</string>
+    <string name="account_title">Cuentamanta Willakuy</string>
+    <string name="account_email_unavailable">Mana kanchu</string>
+    <string name="account_linked_synced">Cuentaykiqa watasqam hinaspa sincronizasqam</string>
+    <string name="account_set_change_password">Yaykuna rimata churay / tikray</string>
+    <string name="account_set_change_password_desc">Google-wan yaykurqanki chayqa, yaykuna rimata ruway korreoykitapas llamk\'achinaykipaq</string>
+    <string name="account_data_saved_info">Datoykikunaqa servidorniykukunapi paykamalla waqaychakun, maypipas dispositivomanta yaykunaykipaq.</string>
+    <string name="profile_full_reset_title">¿Lluqsinkichu llapanta pichaspa?</string>
+    <string name="profile_full_reset_desc">Kay rurayqa llapan aplicación willakuykunata (allichaykuna, watukuykuna, rantikunapas) pichanqa, qallariyman kutimunqa. Kay rurayqa manaña kutichiy atikunchu.</string>
+    <string name="profile_full_reset_btn">Lluqsiy (Llapanta pichay)</string>
+    <string name="profile_cd_photo">Uya rikch\'a</string>
+    <string name="profile_loading">Chaskichkan...</string>
+    <string name="profile_account_linked">Cuenta watasqa</string>
+    <string name="profile_account_link_api">Cuentata API-wan watay</string>
+    <string name="profile_account_locked">Wisq\'asqa (%1$d/5 watukuy)</string>
+    <string name="profile_account_available">Kachkan</string>
+    <string name="product_invalid_dates_title">Mana allin p\'unchawkuna</string>
+    <string name="product_invalid_dates_desc">Pisichay p\'unchawkunaqa mana allinchu utaq mana hunt\'asqachu. Rantikuyqa mana ima ofertapi p\'unchawniyuq waqaychasqa kanqa.</string>
+    <string name="product_date_invalid_past">Mana allin utaq ñawpa p\'unchaw</string>
+    <string name="product_date_not_before_today">P\'unchawqa mana kunan p\'unchawmanta ñawpaqchu kanman</string>
+    <string name="edit_profile_gallery">Galería</string>
+    <string name="edit_profile_crop_hint">Iskay rukanawan astiy hinaspa fotota hatunyachiy</string>
+    <string name="catalog_cd_delete">Pichay</string>
+    <string name="visits_cd_sent">Apachisqa</string>
+    <string name="visits_cd_pending">Suyachkan</string>
+    <string name="sync_server_mode">Servidor Modo</string>
+    <string name="sync_syncing_title">Tinkuchkan...</string>
+    <string name="sync_badge_connected">● TINKUSQA</string>
+    <string name="sync_badge_disconnected">● MANA TINKUSQA</string>
+    <string name="sync_syncing_data">Willaykunata tinkuchkan...</string>
+    <string name="sync_waiting">Suyachkan...</string>
+    <string name="sync_metric_last_event">Qhipa ruway</string>
+    <string name="sync_metric_latency">Unay</string>
+    <string name="sync_metric_acks">ACKs (Allin/Llapan)</string>
+    <string name="sync_metric_success_rate">Allin kasqan</string>
+    <string name="sync_send_ping">PRUEBA UNANCHA APACHIY (PING)</string>
+    <string name="sync_event_log">Ruwaykunap qillqan</string>
+    <string name="sync_disconnect_btn">T\'AQAY</string>
+    <string name="sync_disconnect_confirm_title">¿Dispositivota t\'aqayta munankichu?</string>
+    <string name="sync_disconnect_confirm_btn">T\'aqay</string>
+    <string name="sync_connection_required_title">Tinkuy necesitakun</string>
+    <string name="sync_connection_required_desc">Mana kay rurayta ruwayta atinkichu huk dispositivo mana tinkusqa kaptin. Ama hina kaspa, iskaynin dispositivo aplicacionta kichasqa kachunku hinaspa kikin WiFi redpi kachunku manaraq t\'aqaspa.</string>
+    <string name="sync_connection_required_btn">HAP\'IRQANI</string>
+    <string name="qr_link_device_title">Dispositivota tinkuchiy</string>
+    <string name="qr_scan_instruction">Kay codigota huk dispositivomanta qhaway</string>
+    <string name="qr_cd_code">QR codigo</string>
+    <string name="qr_waiting_connection">Tinkuyta suyachkan...</string>
+    <string name="qr_label_ip">IP: %1$s</string>
+    <string name="qr_label_session">Sesión: %1$s</string>
+    <string name="scan_device_found_title">Dispositivo tarisqa</string>
+    <string name="scan_label_name">Suti: %1$s</string>
+    <string name="scan_label_ip">IP: %1$s:%2$d</string>
+    <string name="scan_label_session">Sesión: %1$s...</string>
+    <string name="scan_connect_btn">Tinkuchiy</string>
+    <string name="linked_devices_unknown">Mana riqsisqa</string>
+    <string name="dashboard_cd_back">Kutiy</string>
+    <string name="insights_top_5">Top 5</string>
+    <string name="insights_top_10">Top 10</string>
+    <string name="home_cd_profile_photo">Uya rikch\'ay</string>
+    <string name="home_tip_fallback">Social perfilniykikunata allichay astawan waqyanaykipaq...</string>
+    <string name="home_cd_play">Uyariy</string>
+    <string name="home_see_all">Llapanta qhaway</string>
+    <string name="tip_detail_empty">Kunan pacha mana yuyaychaykuna kanchu.</string>
+    <string name="info_cd_back">Kutiy</string>
+    <string name="map_cd_expand">Hatunyachiy</string>
+    <string name="map_cd_mode">Niray</string>
+    <string name="map_cd_back">Kutiy</string>
+    <string name="onboarding_other_languages">Huk simikuna</string>
+    <string name="onboarding_cd_options">Akllaykuna</string>
+    <!-- Dashboard: sapanka pestaña pisichay willakuykuna (uyari nit ana) -->
+    <string name="insights_msg_empty">Manaraqmi achka willakuy kanchu.\nWatukuykunata qillqay pisichaykita rikunaykipaq.</string>
+    <string name="insights_msg_summary">Llapanpi %1$d watukuqkunan hamurqan.\nÑawpaq suyuyki %2$s, aswan munasqa ruruykiqa %3$s.\nLlapan qullqi: %4$s.</string>
+    <string name="insights_msg_visitors">%1$d watukuqkunam watukusunki.\nAchkanqa %2$s suyumantam.\nAswan hunt\'asqa p\'unchawniykiqa %3$s.</string>
+    <string name="insights_msg_sales">%1$d rurukunatam rantikurqanki.\nLlapan qullqi: %2$s, kuska rantiqa %3$s.\nAswan rantisqa: %4$s.</string>
+    <string name="insights_msg_times">Aswan hunt\'asqa urayki %1$s.\nAswan hunt\'asqa p\'unchawniyki %2$s.</string>
+    <!-- Perfil: cuenta watasqa pisi rikuchiq -->
+    <string name="profile_account_connected">Watasqa</string>
+
+    <!-- Kunka / uyariy (TTS Sherpa-ONNX). NOTA: quechua best-effort, pendiente de revisión nativa. -->
+    <string name="voice_section_title">Kunka uyariy</string>
+    <string name="profile_voice_models">Kunka modelokuna</string>
+    <string name="voice_models_subtitle">Simiykipaq kunkata uraykachispa kallpachay. ▶ ñit\'iy sapankata uyarinaykipaq.</string>
+    <string name="voice_no_voice_configured">Manaraq kunka churasqa. Huk modelota uraykachiy uyariyta kallpachanaykipaq.</string>
+    <string name="voice_preview">Kunkata uyariy</string>
+    <string name="voice_quality_light">💡 pisi, datosta waqaychan</string>
+    <string name="voice_quality_high">⭐ allin rikch\'aq</string>
+    <string name="voice_btn_download">Uraykachiy</string>
+    <string name="voice_btn_cancel">Saqiy</string>
+    <string name="voice_btn_activate">Llamk\'achiy</string>
+    <string name="voice_btn_delete">Pichay</string>
+    <string name="voice_btn_retry">Yapamanta</string>
+    <string name="voice_in_use">Llamk\'achkan</string>
+    <string name="voice_downloading">Uraykachkan… %1$s</string>
+    <string name="voice_freed_space">Kicharisqa: %1$s</string>
+    <string name="voice_error">Pantay uraykachiypi</string>
+    <string name="audio_btn_no_voice">Perfilniykipi huk kunkata churay</string>
+    <string name="audio_btn_play">Uyariy</string>
+    <string name="audio_btn_stop">Sayachiy</string>
+    <string name="audio_status_preparing">Qillqata uyarinapaq tikrachkan…</string>
+    <string name="audio_status_no_audio">Kay qillqapaq mana uyariy kanchu</string>
+    <string name="audio_status_no_text">Manam tikrachinapaq qillqa kanchu</string>
+    <string name="audio_status_loading">Uyariyta chaskichkan…</string>
+    <string name="delete_account_button">Cuentata pichay</string>
+    <string name="delete_account_title">¿Cuentaykita pichankichu?</string>
+    <string name="delete_account_desc">Cuentaykiwan llapan willaykikunawan phuyupipas kay dispositivopipas wiñaypaq pichakunqa. Kay ruwayqa manam kutichiy atikunchu.</string>
+    <string name="btn_delete_account">Pichay</string>
+    <string name="voice_btn_pause">Samachiy</string>
+    <string name="voice_btn_resume">Kutiy</string>
+    <string name="voice_paused">Samachisqa · %1$s</string>
+    <string name="voice_waiting_network">Tinkuyta suyachkan…</string>
+    <string name="voice_no_internet">Mana internet tinkuy</string>
+</resources>
