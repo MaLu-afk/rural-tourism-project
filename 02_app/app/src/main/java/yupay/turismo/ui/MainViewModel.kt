@@ -444,20 +444,27 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun signInWithGoogle(idToken: String, nonce: String? = null) {
-        runAuth {
-            when (val r = authRepository.loginWithGoogleIdToken(idToken, nonce, mode = "login")) {
-                is AuthResult.Ok -> {
-                    if (r.value) {
-                        seedDefaultBusinessData()   // defensivo: isNewUser → datos por defecto
-                        seedDefaultContentIfEmpty() // y tips/mapas, para subirlos en firstLink
-                    }
-                    cloudSyncEngine.firstLink()
-                    if (!r.value) seedAndUploadContentIfServerEmpty() // cuenta antigua sin contenido
-                    markOnboardingCompleted()
-                    AuthUiState(event = AuthEvent.LoggedIn)
+        runAuth { googleLoginFlow(idToken, nonce) }
+    }
+
+    /**
+     * Inicia sesión con una cuenta de Google que YA existe (mode=login) y ejecuta el post-login
+     * (firstLink + subida de contenido si el servidor está vacío). Centralizado para reutilizarlo
+     * desde la pantalla de login y desde el registro cuando la cuenta de Google ya estaba creada.
+     */
+    private suspend fun googleLoginFlow(idToken: String, nonce: String?): AuthUiState {
+        return when (val r = authRepository.loginWithGoogleIdToken(idToken, nonce, mode = "login")) {
+            is AuthResult.Ok -> {
+                if (r.value) {
+                    seedDefaultBusinessData()   // defensivo: isNewUser → datos por defecto
+                    seedDefaultContentIfEmpty() // y tips/mapas, para subirlos en firstLink
                 }
-                is AuthResult.Err -> AuthUiState(error = r.message)
+                cloudSyncEngine.firstLink()
+                if (!r.value) seedAndUploadContentIfServerEmpty() // cuenta antigua sin contenido
+                markOnboardingCompleted()
+                AuthUiState(event = AuthEvent.LoggedIn)
             }
+            is AuthResult.Err -> AuthUiState(error = r.message)
         }
     }
 
@@ -465,27 +472,29 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
      * REGISTRO con Google (pantalla de registro).
      * - Cuenta nueva: crea el usuario (sin contraseña) y **sube los datos** que ya tenía la app
      *   — caso 3. La contraseña se establece luego en "Información de cuenta".
-     * - Cuenta ya registrada: NO registra; avisa "cuenta ya usada" — caso 4.
+     * - Cuenta ya registrada: para Google, "registrarse" e "iniciar sesión" son el MISMO gesto
+     *   (al elegir la cuenta, Google ya autentica al usuario). En vez de bloquear con el modal
+     *   "cuenta ya usada", iniciamos sesión reintentando en modo login con el mismo idToken.
      */
     fun signUpWithGoogle(idToken: String, nonce: String? = null) {
         runAuth {
             when (val r = authRepository.loginWithGoogleIdToken(idToken, nonce, mode = "register")) {
-                is AuthResult.Ok -> {
+                is AuthResult.Ok ->
                     if (r.value) {
                         seedDefaultContentIfEmpty() // cuenta nueva: tips/mapas llegan al registrar
                         cloudSyncEngine.firstLink()
                         markOnboardingCompleted()
                         AuthUiState(event = AuthEvent.LoggedIn)
                     } else {
-                        // Defensivo: con mode=register la API responde 409 (rama Err de abajo).
-                        // Si aun así llegara isNewUser=false, tratamos igual "cuenta ya usada".
-                        authRepository.discardLocalSession()
-                        AuthUiState(event = AuthEvent.AccountAlreadyExists)
+                        // Defensivo: con mode=register la API NO devuelve sesión para una cuenta
+                        // existente (responde 409, rama Err de abajo). Si aun así llegara
+                        // isNewUser=false, hay sesión válida → iniciamos sesión igualmente.
+                        googleLoginFlow(idToken, nonce)
                     }
-                }
-                // 409 = la cuenta de Google ya existía → no se permite "registrar".
+                // 409 = la cuenta de Google ya existía. En vez de "cuenta ya usada", iniciamos
+                // sesión: el idToken sigue siendo válido para reintentar en modo login.
                 is AuthResult.Err ->
-                    if (r.code == 409) AuthUiState(event = AuthEvent.AccountAlreadyExists)
+                    if (r.code == 409) googleLoginFlow(idToken, nonce)
                     else AuthUiState(error = r.message)
             }
         }
