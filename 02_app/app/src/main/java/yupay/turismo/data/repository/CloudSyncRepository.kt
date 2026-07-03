@@ -123,7 +123,13 @@ class CloudSyncRepository(
                 is ApiResult.Fail -> return r2.toOutcome()
             }
         } else {
-            // El servidor manda (login a cuenta existente, o nada que subir).
+            // El servidor manda para catálogo/visitas/contenido. Pero si su PERFIL está vacío
+            // (p.ej. una cuenta creada por una versión anterior del registro con Google, o una
+            // edición de nombre/sector hecha antes de vincular) y localmente sí hay nombre, lo
+            // subimos para no perderlo. No pisa un perfil real ya existente en el servidor.
+            if (pull.user?.businessName.isNullOrBlank() && settings.businessName.isNotBlank()) {
+                api.updateMe(settings.toProfileRequestDto())
+            }
             finishSync(applyPull(pull, replace = true), watermarkFrom(pull, startedAt))
         }
         pendingOpDao.clear()

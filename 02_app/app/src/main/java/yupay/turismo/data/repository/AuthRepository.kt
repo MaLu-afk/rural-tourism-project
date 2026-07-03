@@ -87,8 +87,17 @@ class AuthRepository(
         mode: String? = null
     ): AuthResult<Boolean> {
         val (hw, name) = deviceArgs()
+        // En el REGISTRO con Google adjuntamos el nombre/sector del emprendimiento (de Room),
+        // igual que el registro por correo, para que la fila de perfil se cree con esos datos.
+        // En el LOGIN NO se envían: el perfil del servidor manda (evita pisarlo con valores locales).
+        val profile = if (mode == "register") appSettingsDao.getSettingsOnce() else null
         return when (val res = api.googleIdToken(
-            GoogleIdTokenRequest(idToken = idToken, nonce = nonce, mode = mode, hardwareDeviceId = hw, deviceName = name)
+            GoogleIdTokenRequest(
+                idToken = idToken, nonce = nonce, mode = mode,
+                hardwareDeviceId = hw, deviceName = name,
+                businessName = profile?.businessName?.takeIf { it.isNotBlank() },
+                businessCategory = profile?.businessCategory?.takeIf { it.isNotBlank() }
+            )
         )) {
             is ApiResult.Ok -> {
                 val sess = res.data.session
